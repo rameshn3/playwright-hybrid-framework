@@ -1,0 +1,72 @@
+import {Locator,Page} from '@playwright/test';
+import {BasePage} from './basePage';
+
+export class ProductPage extends BasePage {  
+    private productTitle: Locator;
+    private productDescription: Locator;
+    private productPrice: Locator;
+    private addToCartButton: Locator;
+    private removeFromCartButton: Locator;
+    private shoppingCartIcon: Locator;
+
+    constructor(page: Page) {
+        super(page);
+        this.productTitle = page.locator('.title');
+        this.productDescription = page.locator('.inventory_item_name');
+        this.productPrice = page.locator('.inventory_item_price');
+        this.addToCartButton = page.getByText('Add to cart');
+        this.removeFromCartButton = page.getByText('Remove');
+        this.shoppingCartIcon = page.locator('.shopping_cart_link');
+    }
+
+    //chck product page is loaded by checking the title
+    async isProductPageLoaded(): Promise<boolean> {
+        const txt = await this.productTitle.textContent();
+        return txt?.trim() === 'Products';
+    }
+
+    //add products by index (0,1,2...)
+    async addProductToCartByIndex(index: number) {
+       // const addButtons = await this.addToCartButton.allTextContents;
+         const addButtons = await this.addToCartButton.elementHandles(); 
+        if (index < addButtons.length) {
+            await addButtons[index].click();
+        } else {
+            throw new Error(`Product index ${index} is out of bounds`);
+        }
+    }
+
+//add product by name
+    async addProductToCartByName(productName: string) {
+        const product = this.productDescription.filter({ hasText: productName });
+        const addToCartButton = product.locator('button:has-text("Add to cart")');
+        await addToCartButton.click();
+    }
+
+    //remove product by name
+    async removeProductFromCartByName(productName: string) {
+        const product = this.productDescription.filter({ hasText: productName });
+      const removeButton = product.locator('button:has-text("Remove")');
+        await removeButton.click();
+    }
+
+    //add all products
+    async addAllProductsToCart() {
+        const addButtons = await this.addToCartButton.elementHandles();
+        const count = addButtons.length;
+        for (let i = 0; i < count; i++) {
+            await addButtons[i].click();
+        }
+    }
+
+    //navigate to cart page
+    async goToCart() {
+        await this.shoppingCartIcon.click();
+    }
+
+    //get product count in cart
+    async getCartItemCount(): Promise<number> {
+        const countText = await this.shoppingCartIcon.textContent();
+        return countText ? parseInt(countText.trim()) : 0;
+    }   
+}
