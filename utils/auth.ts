@@ -26,7 +26,12 @@ export function getCredentials(userType: string): Credentials {
         return {
             username: process.env.LOCKED_OUT_USER || '',
             password: process.env.PASSWORD || '',
-        };  
+        }; 
+    case 'INVALID_USER':
+        return {
+            username: 'invalid_username',
+            password: 'invalid_password',
+        }; 
     default:
         throw new Error(`Unknown user type: ${userType}`);
    }

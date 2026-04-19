@@ -8,6 +8,7 @@ export class LoginPage extends BasePage {
     private passwordInput: Locator;
     private loginButton: Locator;
     private swaglabsLogo: Locator;
+    private errorMessage: Locator;
 
     constructor(page: Page) {
         super(page);
@@ -18,6 +19,7 @@ export class LoginPage extends BasePage {
       //  this.loginButton = page.getByRole('button', { name: 'Login' });
         this.swaglabsLogo = page.locator('.login_logo'); //.classvalue or [attributenam='attributevalue']
       //  this.swaglabsLogo = page.getByText('Swag Labs');
+       this.errorMessage = this.page.getByRole('heading', { level: 3 });
     }
 
     async loginAs(userType: string) {
@@ -30,5 +32,9 @@ export class LoginPage extends BasePage {
     async isLogoVisible(): Promise<boolean> {
         return await this.swaglabsLogo.isVisible();
     }
+
+   getErrorMessage() {
+    return this.errorMessage;
+}
 
 }

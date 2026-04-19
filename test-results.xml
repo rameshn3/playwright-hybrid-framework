@@ -1,0 +1,31 @@
+<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="259.305754">
+<testsuite name="login.spec.ts" timestamp="2026-04-19T14:24:30.871Z" hostname="Google Chrome" tests="3" failures="0" skipped="0" time="239.112" errors="0">
+<testcase name="Login Tests › should login with valid credentials" classname="login.spec.ts" time="44.727">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-Tests-should-login-with-valid-credentials-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-Tests-should-login-with-valid-credentials-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with locked out credentials" classname="login.spec.ts" time="91.619">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-Tests-should-s-4753d-with-locked-out-credentials-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-Tests-should-s-4753d-with-locked-out-credentials-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with invalid credentials" classname="login.spec.ts" time="102.766">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-Tests-should-show-error-with-invalid-credentials-Google-Chrome\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-Tests-should-show-error-with-invalid-credentials-Google-Chrome\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>
