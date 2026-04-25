@@ -44,18 +44,21 @@ export class ProductPage extends BasePage {
 
 //add product by name
     async addProductToCartByName(productName: string) {
-        const product = this.productDescription.filter({ hasText: productName });
-        const addToCartButton = product.locator('button:has-text("Add to cart")');
-        await addToCartButton.click();
-    }
+    const product = this.page
+        .locator('.inventory_item')
+        .filter({ hasText: productName });
+
+    await product.getByRole('button', { name: 'Add to cart' }).click();
+}
 
     //remove product by name
-    async removeProductFromCartByName(productName: string) {
-        const product = this.productDescription.filter({ hasText: productName });
-      const removeButton = product.locator('button:has-text("Remove")');
-        await removeButton.click();
-    }
+  async removeProductFromCartByName(productName: string) {
+    const product = this.page
+        .locator('.inventory_item')
+        .filter({ hasText: productName });
 
+    await product.getByRole('button', { name: 'Remove' }).click();
+}
     //add all products
     async addAllProductsToCart() {
         const addButtons = await this.addToCartButton.elementHandles();
