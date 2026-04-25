@@ -1,29 +1,181 @@
-<testsuites id="" name="" tests="3" failures="0" skipped="0" errors="0" time="259.305754">
-<testsuite name="login.spec.ts" timestamp="2026-04-19T14:24:30.871Z" hostname="Google Chrome" tests="3" failures="0" skipped="0" time="239.112" errors="0">
-<testcase name="Login Tests › should login with valid credentials" classname="login.spec.ts" time="44.727">
+<testsuites id="" name="" tests="19" failures="0" skipped="0" errors="0" time="97.01556100000002">
+<testsuite name="cartpage.spec.ts" timestamp="2026-04-25T14:43:51.607Z" hostname="chromium" tests="4" failures="0" skipped="0" time="107.801" errors="0">
+<testcase name="Cart page tests › Navigate to cart page" classname="cartpage.spec.ts" time="27.186">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\login-Login-Tests-should-login-with-valid-credentials-Google-Chrome\test-finished-1.png]]
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\login-Login-Tests-should-login-with-valid-credentials-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should show error with locked out credentials" classname="login.spec.ts" time="91.619">
+<testcase name="Cart page tests › click on continue shopping button and verify navigation to product page" classname="cartpage.spec.ts" time="29.083">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\login-Login-Tests-should-s-4753d-with-locked-out-credentials-Google-Chrome\test-finished-1.png]]
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-c-0a59b--navigation-to-product-page-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\login-Login-Tests-should-s-4753d-with-locked-out-credentials-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-c-0a59b--navigation-to-product-page-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Login Tests › should show error with invalid credentials" classname="login.spec.ts" time="102.766">
+<testcase name="Cart page tests › remove product from cart and verify cart count" classname="cartpage.spec.ts" time="25.215">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\login-Login-Tests-should-show-error-with-invalid-credentials-Google-Chrome\test-finished-1.png]]
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-r-36995--cart-and-verify-cart-count-chromium\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\login-Login-Tests-should-show-error-with-invalid-credentials-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-r-36995--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › click on checkout button and verify navigation to checkout page" classname="cartpage.spec.ts" time="26.317">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-c-74da2-navigation-to-checkout-page-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\cartpage-Cart-page-tests-c-74da2-navigation-to-checkout-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="checkout.spec.ts" timestamp="2026-04-25T14:43:51.607Z" hostname="chromium" tests="3" failures="0" skipped="0" time="60.56" errors="0">
+<testcase name="checkout page tests › verify order completion flow" classname="checkout.spec.ts" time="29.248">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\checkout-checkout-page-tests-verify-order-completion-flow-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\checkout-checkout-page-tests-verify-order-completion-flow-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout page tests › verify cancel button functionality on checkout page" classname="checkout.spec.ts" time="15.538">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\checkout-checkout-page-tes-29e6e-ctionality-on-checkout-page-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\checkout-checkout-page-tes-29e6e-ctionality-on-checkout-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout page tests › Verify cancel button in checkout overview page" classname="checkout.spec.ts" time="15.774">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\checkout-checkout-page-tes-4b7c9-n-in-checkout-overview-page-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\checkout-checkout-page-tes-4b7c9-n-in-checkout-overview-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="example.spec.ts" timestamp="2026-04-25T14:43:51.607Z" hostname="chromium" tests="2" failures="0" skipped="0" time="29.504" errors="0">
+<testcase name="has title" classname="example.spec.ts" time="13.429">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-has-title-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\example-has-title-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="get started link" classname="example.spec.ts" time="16.075">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\example-get-started-link-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\example-get-started-link-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.ts" timestamp="2026-04-25T14:43:51.607Z" hostname="chromium" tests="3" failures="0" skipped="0" time="33.542" errors="0">
+<testcase name="Login Tests › should login with valid credentials" classname="login.spec.ts" time="11.538">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-Tests-should-login-with-valid-credentials-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-Tests-should-login-with-valid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with locked out credentials" classname="login.spec.ts" time="11.786">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-Tests-should-s-4753d-with-locked-out-credentials-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-Tests-should-s-4753d-with-locked-out-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with invalid credentials" classname="login.spec.ts" time="10.218">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\login-Login-Tests-should-show-error-with-invalid-credentials-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\login-Login-Tests-should-show-error-with-invalid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="products.spec.ts" timestamp="2026-04-25T14:43:51.607Z" hostname="chromium" tests="7" failures="0" skipped="0" time="76.849" errors="0">
+<testcase name="product page tests › should display products and verfy product list" classname="products.spec.ts" time="14.363">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-test-6c0ba-ucts-and-verfy-product-list-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-test-6c0ba-ucts-and-verfy-product-list-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add products to cart and verify cart count" classname="products.spec.ts" time="14.072">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-test-b5ea0--cart-and-verify-cart-count-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-test-b5ea0--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add product by name and verify cart count" classname="products.spec.ts" time="8.731">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-test-3e67c--name-and-verify-cart-count-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-test-3e67c--name-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Remove product by name and verify cart count" classname="products.spec.ts" time="15.575">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-test-c863c--name-and-verify-cart-count-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-test-c863c--name-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add all products to cart and verify cart count" classname="products.spec.ts" time="6.565">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-test-13221--cart-and-verify-cart-count-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-test-13221--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › sort products by price low to high and verify sorting" classname="products.spec.ts" time="9.257">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-test-e9795--to-high-and-verify-sorting-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-test-e9795--to-high-and-verify-sorting-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Navigate to cart page" classname="products.spec.ts" time="8.286">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\products-product-page-tests-Navigate-to-cart-page-chromium\test-finished-1.png]]
+
+[[ATTACHMENT|test-results\products-product-page-tests-Navigate-to-cart-page-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>

@@ -9,18 +9,18 @@
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 1,
+    "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
@@ -29,14 +29,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "firefox",
         "name": "firefox",
@@ -45,14 +45,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "webkit",
         "name": "webkit",
@@ -61,14 +61,30 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
+        },
+        "id": "Mobile Chrome",
+        "name": "Mobile Chrome",
+        "testDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 5
         },
         "id": "Microsoft Edge",
         "name": "Microsoft Edge",
@@ -77,14 +93,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "C:/Users/Public/PlaywrightE2EFramework-Mar292026/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "Google Chrome",
         "name": "Google Chrome",
@@ -93,7 +109,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       }
     ],
     "quiet": false,
@@ -136,10 +152,457 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.58.2",
-    "workers": 1,
+    "workers": 5,
     "webServer": null
   },
   "suites": [
+    {
+      "title": "cartpage.spec.ts",
+      "file": "cartpage.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Cart page tests",
+          "file": "cartpage.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Navigate to cart page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 27186,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:04.547Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7a31977d2547e65d8f7b-7f25b7f6712f38cb0787",
+              "file": "cartpage.spec.ts",
+              "line": 15,
+              "column": 6
+            },
+            {
+              "title": "click on continue shopping button and verify navigation to product page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 29083,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:04.131Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-c-0a59b--navigation-to-product-page-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-c-0a59b--navigation-to-product-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7a31977d2547e65d8f7b-2c6e0276fefaac2b2e64",
+              "file": "cartpage.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "remove product from cart and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 25215,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:04.268Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-r-36995--cart-and-verify-cart-count-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-r-36995--cart-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7a31977d2547e65d8f7b-76737cbd752cd8fc60dd",
+              "file": "cartpage.spec.ts",
+              "line": 28,
+              "column": 9
+            },
+            {
+              "title": "click on checkout button and verify navigation to checkout page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 26317,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:04.498Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-c-74da2-navigation-to-checkout-page-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\cartpage-Cart-page-tests-c-74da2-navigation-to-checkout-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "7a31977d2547e65d8f7b-53abe18e3e42d39c0839",
+              "file": "cartpage.spec.ts",
+              "line": 38,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "checkout.spec.ts",
+      "file": "checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "checkout page tests",
+          "file": "checkout.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "verify order completion flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 29248,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:04.312Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\checkout-checkout-page-tests-verify-order-completion-flow-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\checkout-checkout-page-tests-verify-order-completion-flow-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25ab1bfc84c57e3e3a45-af59dbde0b5ffc3231a2",
+              "file": "checkout.spec.ts",
+              "line": 19,
+              "column": 9
+            },
+            {
+              "title": "verify cancel button functionality on checkout page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 15538,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:35.881Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\checkout-checkout-page-tes-29e6e-ctionality-on-checkout-page-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\checkout-checkout-page-tes-29e6e-ctionality-on-checkout-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25ab1bfc84c57e3e3a45-c659da2f76425130f1de",
+              "file": "checkout.spec.ts",
+              "line": 29,
+              "column": 9
+            },
+            {
+              "title": "Verify cancel button in checkout overview page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15774,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:36.863Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\checkout-checkout-page-tes-4b7c9-n-in-checkout-overview-page-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\checkout-checkout-page-tes-4b7c9-n-in-checkout-overview-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "25ab1bfc84c57e3e3a45-0bb15ff0965842503888",
+              "file": "checkout.spec.ts",
+              "line": 34,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 13429,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-25T14:44:37.347Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\example-has-title-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\example-has-title-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 16075,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-25T14:44:37.950Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\example-get-started-link-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\example-get-started-link-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
     {
       "title": "login.spec.ts",
       "file": "login.spec.ts",
@@ -159,33 +622,33 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 0,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 44727,
+                      "duration": 11538,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-19T14:24:36.704Z",
+                      "startTime": "2026-04-25T14:44:38.363Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-login-with-valid-credentials-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-login-with-valid-credentials-chromium\\test-finished-1.png"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-login-with-valid-credentials-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-login-with-valid-credentials-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -193,7 +656,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "41d3fd2474a19feb00a1-176041cd746ba949ddba",
+              "id": "41d3fd2474a19feb00a1-8091c03738943c315a7a",
               "file": "login.spec.ts",
               "line": 5,
               "column": 9
@@ -204,33 +667,33 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 0,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 91619,
+                      "duration": 11786,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-19T14:25:28.094Z",
+                      "startTime": "2026-04-25T14:44:51.606Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-s-4753d-with-locked-out-credentials-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-s-4753d-with-locked-out-credentials-chromium\\test-finished-1.png"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-s-4753d-with-locked-out-credentials-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-s-4753d-with-locked-out-credentials-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -238,9 +701,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "41d3fd2474a19feb00a1-a4e1b7b8d7b72c85e341",
+              "id": "41d3fd2474a19feb00a1-852c989921152d424adc",
               "file": "login.spec.ts",
-              "line": 16,
+              "line": 14,
               "column": 9
             },
             {
@@ -249,33 +712,33 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 0,
+                  "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 102766,
+                      "duration": 10218,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-04-19T14:27:02.275Z",
+                      "startTime": "2026-04-25T14:44:52.813Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-show-error-with-invalid-credentials-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-show-error-with-invalid-credentials-chromium\\test-finished-1.png"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-show-error-with-invalid-credentials-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\login-Login-Tests-should-show-error-with-invalid-credentials-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -283,9 +746,341 @@
                   "status": "expected"
                 }
               ],
-              "id": "41d3fd2474a19feb00a1-a5f734518272f7195c4e",
+              "id": "41d3fd2474a19feb00a1-c708ac7403d3b194c520",
               "file": "login.spec.ts",
-              "line": 23,
+              "line": 20,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "products.spec.ts",
+      "file": "products.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "product page tests",
+          "file": "products.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display products and verfy product list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 14363,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:53.394Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-6c0ba-ucts-and-verfy-product-list-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-6c0ba-ucts-and-verfy-product-list-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-25d745c55acbcd50dd4f",
+              "file": "products.spec.ts",
+              "line": 12,
+              "column": 9
+            },
+            {
+              "title": "Add products to cart and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 14072,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:44:54.927Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-b5ea0--cart-and-verify-cart-count-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-b5ea0--cart-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-e6004ef2f280521698c8",
+              "file": "products.spec.ts",
+              "line": 19,
+              "column": 9
+            },
+            {
+              "title": "Add product by name and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8731,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:45:01.289Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-3e67c--name-and-verify-cart-count-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-3e67c--name-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-4609fed94344e6f09f0b",
+              "file": "products.spec.ts",
+              "line": 26,
+              "column": 9
+            },
+            {
+              "title": "Remove product by name and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 15575,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:45:04.900Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-c863c--name-and-verify-cart-count-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-c863c--name-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-61ee7a0f031b98735108",
+              "file": "products.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Add all products to cart and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 6565,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:45:05.704Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-13221--cart-and-verify-cart-count-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-13221--cart-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-0fc10e6016cf600ec109",
+              "file": "products.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "sort products by price low to high and verify sorting",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 9257,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:45:10.940Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-e9795--to-high-and-verify-sorting-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-test-e9795--to-high-and-verify-sorting-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-f341ee4a4252f016e08f",
+              "file": "products.spec.ts",
+              "line": 45,
+              "column": 5
+            },
+            {
+              "title": "Navigate to cart page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8286,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-25T14:45:11.664Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-tests-Navigate-to-cart-page-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\products-product-page-tests-Navigate-to-cart-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "000c94276132c4f97581-14e20d3f3f11a59c916e",
+              "file": "products.spec.ts",
+              "line": 52,
               "column": 9
             }
           ]
@@ -295,9 +1090,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-19T14:24:30.570Z",
-    "duration": 259305.754,
-    "expected": 3,
+    "startTime": "2026-04-25T14:43:46.733Z",
+    "duration": 97015.56100000002,
+    "expected": 19,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0
