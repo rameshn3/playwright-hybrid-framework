@@ -4,6 +4,7 @@ import { LoginPage } from '../pages/loginPage';
 import { ProductPage } from '../pages/productPage';
 import { CartPage } from '../pages/cartPage';
 import { CheckoutPage } from '../pages/checkoutPage';
+import { HerokuAppPage } from '../pages/herokuAppPage';
 
 type PageFixture = {
 pageFactory: PageFactory;
@@ -11,6 +12,7 @@ pageFactory: PageFactory;
  productPage: ProductPage;
  cartPage: CartPage;
  checkoutPage: CheckoutPage;
+  herokuAppPage: HerokuAppPage;
 };
 
 export const test = base.extend<PageFixture>({
@@ -33,7 +35,10 @@ export const test = base.extend<PageFixture>({
   },
   checkoutPage: async ({ pageFactory }, use) => {
     await use(pageFactory.createCheckoutPage());
-  } 
+  }, 
+  herokuAppPage: async ({ pageFactory }, use) => {
+    await use(pageFactory.createHerokuAppPage());
+  }
 });
 
 

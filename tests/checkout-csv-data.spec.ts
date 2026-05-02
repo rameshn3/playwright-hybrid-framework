@@ -1,18 +1,18 @@
 import {test,expect} from '../fixtures/fixture';
-import {readTestData} from '../utils/dataReader';
+import {readCSVData} from '../utils/csvReader';
 
 //defineth type
 type CheckoutData = {
     firstName: string;
     lastName: string;
-    postalCode: string;
+    zipCode: string;
 };
 
 //read data using genric function
-const checkoutData: CheckoutData = readTestData<CheckoutData>('./testdata/checkoutData.json');
+const checkoutData: CheckoutData = readCSVData<CheckoutData>('./testdata/checkoutData.csv');
 
 
-test.describe('checkout page tests', () => {
+test.describe('checkout flow test - reading CSV file single data', () => {
     test.beforeEach(async ({ loginPage,productPage,cartPage,checkoutPage}) => {     
         await loginPage.navigateTo();
         await loginPage.loginAs('STANDARD_USER');
@@ -28,7 +28,7 @@ test.describe('checkout page tests', () => {
     });
 
     test('verify order completion flow', async ({ checkoutPage }) => {
-        await checkoutPage.fillCheckoutInformation(checkoutData.firstName, checkoutData.lastName, checkoutData.postalCode);
+        await checkoutPage.fillCheckoutInformation(checkoutData.firstName, checkoutData.lastName, checkoutData.zipCode);
         await checkoutPage.clickContinueButton();
         await expect(checkoutPage.isOverviewPageDisplayed()).toBeTruthy();
         await checkoutPage.clickFinishButton();
@@ -36,20 +36,6 @@ test.describe('checkout page tests', () => {
         await checkoutPage.clickBackToProductsButton();
              
     });
-
-    test('verify cancel button functionality on checkout page', async ({ cartPage,checkoutPage }) => {
-        await checkoutPage.clickCancelButton();
-          await expect(await cartPage.isCartPageLoaded()).toBeTruthy();
-    });
-
-test('Verify cancel button in checkout overview page', async ({ checkoutPage,productPage }) => {
-        await checkoutPage.fillCheckoutInformation('John', 'Doe', '12345');
-        await checkoutPage.clickContinueButton();
-        await expect(checkoutPage.isOverviewPageDisplayed()).toBeTruthy();
-        await checkoutPage.clickCancelButton();
-        await expect(productPage.isProductPageLoaded()).toBeTruthy();
-    }   
-    );
 
      test.afterEach(async ({ productPage }) => {
             await productPage.logout();

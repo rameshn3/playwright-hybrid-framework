@@ -4,6 +4,7 @@ import { ProductPage } from './productPage';
 import { CartPage } from './cartPage';
 import { CheckoutPage } from './checkoutPage';
 import { BasePage } from './basePage';
+import { HerokuAppPage } from './herokuAppPage';
 
 export class PageFactory {
     private page: Page;
@@ -30,5 +31,9 @@ export class PageFactory {
 
     createBasePage(): BasePage {
         return new BasePage(this.page);
+    }
+
+    createHerokuAppPage(): HerokuAppPage {
+        return new HerokuAppPage(this.page);
     }
 }
