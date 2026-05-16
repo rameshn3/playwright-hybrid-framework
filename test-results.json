@@ -157,20 +157,20 @@
   },
   "suites": [
     {
-      "title": "handleAlerts.spec.ts",
-      "file": "handleAlerts.spec.ts",
+      "title": "keyboardActions.spec.ts",
+      "file": "keyboardActions.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Handle Alerts",
-          "file": "handleAlerts.spec.ts",
+          "title": "Key board action scenario",
+          "file": "keyboardActions.spec.ts",
           "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "should handle simple alert",
+              "title": "keyboard actions",
               "ok": true,
               "tags": [],
               "tests": [
@@ -185,23 +185,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8003,
+                      "duration": 12848,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-02T02:19:22.978Z",
+                      "startTime": "2026-05-16T01:58:34.519Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-should-handle-simple-alert-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\keyboardActions-Key-board-action-scenario-keyboard-actions-Google-Chrome\\test-finished-1.png"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-should-handle-simple-alert-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\keyboardActions-Key-board-action-scenario-keyboard-actions-Google-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -209,13 +209,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "1ebd54ba221da902aff6-01c35ae69a675b436acf",
-              "file": "handleAlerts.spec.ts",
+              "id": "ac6c2e0ce6fac91edd4d-6938463c7f850f1e6f10",
+              "file": "keyboardActions.spec.ts",
               "line": 10,
               "column": 9
             },
             {
-              "title": "should handle confirm alert",
+              "title": "should combination of keys",
               "ok": true,
               "tags": [],
               "tests": [
@@ -230,23 +230,23 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6769,
+                      "duration": 8357,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-02T02:19:33.774Z",
+                      "startTime": "2026-05-16T01:58:50.850Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-should-handle-confirm-alert-Google-Chrome\\test-finished-1.png"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\keyboardActions-Key-board--b5e56--should-combination-of-keys-Google-Chrome\\test-finished-1.png"
                         },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-should-handle-confirm-alert-Google-Chrome\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\keyboardActions-Key-board--b5e56--should-combination-of-keys-Google-Chrome\\trace.zip"
                         }
                       ]
                     }
@@ -254,144 +254,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "1ebd54ba221da902aff6-bd1cdb776a0124796810",
-              "file": "handleAlerts.spec.ts",
-              "line": 23,
-              "column": 9
-            },
-            {
-              "title": "should handle confirm alert with cancel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6402,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-02T02:19:41.719Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-1309f-e-confirm-alert-with-cancel-Google-Chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-1309f-e-confirm-alert-with-cancel-Google-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1ebd54ba221da902aff6-91718573d56299313d02",
-              "file": "handleAlerts.spec.ts",
-              "line": 34,
-              "column": 9
-            },
-            {
-              "title": "should handle prompt alert",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7097,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-02T02:19:49.304Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-should-handle-prompt-alert-Google-Chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-should-handle-prompt-alert-Google-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1ebd54ba221da902aff6-f389403aac01e5760328",
-              "file": "handleAlerts.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "should handle prompt alert with cancel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Google Chrome",
-                  "projectName": "Google Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6571,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-02T02:19:57.264Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-39778-le-prompt-alert-with-cancel-Google-Chrome\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\handleAlerts-Handle-Alerts-39778-le-prompt-alert-with-cancel-Google-Chrome\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1ebd54ba221da902aff6-daa0f12e0d49e142e0a7",
-              "file": "handleAlerts.spec.ts",
-              "line": 58,
+              "id": "ac6c2e0ce6fac91edd4d-9decaa20bb31a7da0320",
+              "file": "keyboardActions.spec.ts",
+              "line": 30,
               "column": 9
             }
           ]
@@ -401,9 +266,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-02T02:19:15.701Z",
-    "duration": 51020.68,
-    "expected": 5,
+    "startTime": "2026-05-16T01:58:27.036Z",
+    "duration": 37902.593,
+    "expected": 2,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

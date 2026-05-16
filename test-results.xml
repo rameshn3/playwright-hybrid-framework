@@ -1,47 +1,20 @@
-<testsuites id="" name="" tests="5" failures="0" skipped="0" errors="0" time="51.02068">
-<testsuite name="handleAlerts.spec.ts" timestamp="2026-05-02T02:19:16.843Z" hostname="Google Chrome" tests="5" failures="0" skipped="0" time="34.842" errors="0">
-<testcase name="Handle Alerts › should handle simple alert" classname="handleAlerts.spec.ts" time="8.003">
+<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="37.902593">
+<testsuite name="keyboardActions.spec.ts" timestamp="2026-05-16T01:58:27.793Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="21.205" errors="0">
+<testcase name="Key board action scenario › keyboard actions" classname="keyboardActions.spec.ts" time="12.848">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-should-handle-simple-alert-Google-Chrome\test-finished-1.png]]
+[[ATTACHMENT|test-results\keyboardActions-Key-board-action-scenario-keyboard-actions-Google-Chrome\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-should-handle-simple-alert-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\keyboardActions-Key-board-action-scenario-keyboard-actions-Google-Chrome\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Handle Alerts › should handle confirm alert" classname="handleAlerts.spec.ts" time="6.769">
+<testcase name="Key board action scenario › should combination of keys" classname="keyboardActions.spec.ts" time="8.357">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-should-handle-confirm-alert-Google-Chrome\test-finished-1.png]]
+[[ATTACHMENT|test-results\keyboardActions-Key-board--b5e56--should-combination-of-keys-Google-Chrome\test-finished-1.png]]
 
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-should-handle-confirm-alert-Google-Chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle confirm alert with cancel" classname="handleAlerts.spec.ts" time="6.402">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-1309f-e-confirm-alert-with-cancel-Google-Chrome\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-1309f-e-confirm-alert-with-cancel-Google-Chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle prompt alert" classname="handleAlerts.spec.ts" time="7.097">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-should-handle-prompt-alert-Google-Chrome\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-should-handle-prompt-alert-Google-Chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle prompt alert with cancel" classname="handleAlerts.spec.ts" time="6.571">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-39778-le-prompt-alert-with-cancel-Google-Chrome\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\handleAlerts-Handle-Alerts-39778-le-prompt-alert-with-cancel-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\keyboardActions-Key-board--b5e56--should-combination-of-keys-Google-Chrome\trace.zip]]
 ]]>
 </system-out>
 </testcase>
