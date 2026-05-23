@@ -1,20 +1,9 @@
-<testsuites id="" name="" tests="2" failures="0" skipped="0" errors="0" time="37.902593">
-<testsuite name="keyboardActions.spec.ts" timestamp="2026-05-16T01:58:27.793Z" hostname="Google Chrome" tests="2" failures="0" skipped="0" time="21.205" errors="0">
-<testcase name="Key board action scenario › keyboard actions" classname="keyboardActions.spec.ts" time="12.848">
+<testsuites id="" name="" tests="1" failures="0" skipped="0" errors="0" time="10.977144000000001">
+<testsuite name="booking\createBooking.spec.ts" timestamp="2026-05-23T02:22:46.974Z" hostname="Google Chrome" tests="1" failures="0" skipped="0" time="2.818" errors="0">
+<testcase name="Booking API - Create Booking › should create a new booking successfully" classname="booking\createBooking.spec.ts" time="2.818">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\keyboardActions-Key-board-action-scenario-keyboard-actions-Google-Chrome\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\keyboardActions-Key-board-action-scenario-keyboard-actions-Google-Chrome\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Key board action scenario › should combination of keys" classname="keyboardActions.spec.ts" time="8.357">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\keyboardActions-Key-board--b5e56--should-combination-of-keys-Google-Chrome\test-finished-1.png]]
-
-[[ATTACHMENT|test-results\keyboardActions-Key-board--b5e56--should-combination-of-keys-Google-Chrome\trace.zip]]
+[[ATTACHMENT|test-results\booking-createBooking-Book-45159--a-new-booking-successfully-Google-Chrome\trace.zip]]
 ]]>
 </system-out>
 </testcase>
