@@ -50,7 +50,7 @@ export class BaseApi {
     protected async put(
         endpoint: string,
         payload?: object,
-        expectedStatus: number = 200,
+        expectedStatus: number=200,
         headers?: Record<string, string>
     ): Promise<APIResponse> {
 

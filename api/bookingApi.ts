@@ -46,21 +46,30 @@ export class BookingApi extends BaseApi {
     // Update Booking
     async updateBooking(
         bookingId: number,
-        bookingData: BookingPayload
+       bookingData: BookingPayload,
+        expectedStatus: number
     ): Promise<BookingPayload> {
 
         const token = await this.getAuthToken();
 
         const response = await this.put(
             `/booking/${bookingId}`,
+           
             bookingData,
-            200,
+            expectedStatus,
+        
             {
                 cookie: `token=${token}`
             }
         );
 
+       // Handle non-JSON responses safely
+    const contentType = response.headers()['content-type'];
+
+    if (contentType?.includes('application/json')) {
         return await response.json() as BookingPayload;
+    }
+    throw new Error('Response is not JSON and cannot be cast to BookingPayload');
     }
 
     // Partial Update
