@@ -1,5 +1,5 @@
-import {test,expect} from '../fixtures/fixture';
-import {readTestData} from '../utils/dataReader';
+import {test,expect} from '../../fixtures/fixture';
+import {readTestData} from '../../utils/dataReader';
 
 //defineth type
 type CheckoutData = {

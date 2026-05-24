@@ -32,16 +32,20 @@ export default defineConfig({
     ['json', { outputFile: 'test-results.json' }], 
     ['list'],
     ['junit', { outputFile: 'test-results.xml' }],
+    ['allure-playwright']
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-     baseURL: process.env.BASE_URL,
+      baseURL:
+      process.env.BASE_URL ||
+      process.env.API_BASE_URL,
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on',
-    video: 'on-first-retry',
-    screenshot: 'on',
+     headless: true,
+    screenshot: 'only-on-failure',
+    video: 'retain-on-failure',
   },
 
   /* Configure projects for major browsers */

@@ -1,36 +1,123 @@
-name: Playwright Tests
+name: Playwright Framework
+
 on:
   push:
-    branches: [ main, master ]
+    branches:
+      - main
+
   pull_request:
-    branches: [ main, master ]
+    branches:
+      - main
+
 jobs:
-  test:
-    timeout-minutes: 60
-    runs-on: windows-latest
+
+  ui-tests:
+
+    runs-on: ubuntu-latest
+
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: lts/*
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run:  $env:ENV_ID="qa"; npx playwright test /tests/booking/ --project=chromium
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
-    - name: deploy report to GitHub Pages
-      if: ${{ !cancelled() }}
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./playwright-report
-          publish_branch: gh-pages
-          user_name: rameshn3
-          user_email: rameshn3@gmail.com
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run SauceDemo Tests
+        run: npm run test:ui
+
+      - name: Upload UI Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-playwright-report
+          path: playwright-report/
+
+      - name: Upload UI Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ui-allure-results
+          path: allure-results/
+
+  api-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run Booking API Tests
+        run: npm run test:api
+
+      - name: Upload API Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-playwright-report
+          path: playwright-report/
+
+      - name: Upload API Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: api-allure-results
+          path: allure-results/
+
+  heroku-tests:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+
+      - name: Run HerokuApp Tests
+        run: npm run test:heroku
+
+      - name: Upload Heroku Report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heroku-playwright-report
+          path: playwright-report/
+
+      - name: Upload Heroku Allure Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: heroku-allure-results
+          path: allure-results/
