@@ -31,22 +31,29 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
       - name: Run SauceDemo Tests
         run: npm run test:ui
 
-      - name: Upload UI Report
+      - name: Generate UI Allure Report
+        if: always()
+        run: allure generate allure-results --clean -o allure-report
+
+      - name: Upload UI Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ui-playwright-report
           path: playwright-report/
 
-      - name: Upload UI Allure Results
+      - name: Upload UI Allure HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: ui-allure-results
-          path: allure-results/
+          name: ui-allure-report
+          path: allure-report/
 
   api-tests:
 
@@ -68,22 +75,29 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
       - name: Run Booking API Tests
         run: npm run test:api
 
-      - name: Upload API Report
+      - name: Generate API Allure Report
+        if: always()
+        run: allure generate allure-results --clean -o allure-report
+
+      - name: Upload API Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: api-playwright-report
           path: playwright-report/
 
-      - name: Upload API Allure Results
+      - name: Upload API Allure HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: api-allure-results
-          path: allure-results/
+          name: api-allure-report
+          path: allure-report/
 
   heroku-tests:
 
@@ -105,19 +119,26 @@ jobs:
       - name: Install Playwright Browsers
         run: npx playwright install --with-deps
 
+      - name: Install Allure Commandline
+        run: npm install -g allure-commandline
+
       - name: Run HerokuApp Tests
         run: npm run test:heroku
 
-      - name: Upload Heroku Report
+      - name: Generate Heroku Allure Report
+        if: always()
+        run: allure generate allure-results --clean -o allure-report
+
+      - name: Upload Heroku Playwright Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: heroku-playwright-report
           path: playwright-report/
 
-      - name: Upload Heroku Allure Results
+      - name: Upload Heroku Allure HTML Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: heroku-allure-results
-          path: allure-results/
+          name: heroku-allure-report
+          path: allure-report/
