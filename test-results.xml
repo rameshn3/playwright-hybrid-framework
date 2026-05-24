@@ -1,146 +1,90 @@
-<testsuites id="" name="" tests="17" failures="0" skipped="1" errors="0" time="86.867023">
-<testsuite name="herokuapp\downloadFile.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.186" errors="0">
-<testcase name="Handle downloadFiles › should download a file" classname="herokuapp\downloadFile.spec.ts" time="22.186">
+<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="24.217599999999997">
+<testsuite name="booking\createBooking.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.057" errors="0">
+<testcase name="Booking API - Create Booking › should create a new booking successfully" classname="booking\createBooking.spec.ts" time="3.057">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-downloadFile-Han-690b8-iles-should-download-a-file-chromium\trace.zip]]
+[[ATTACHMENT|test-results\booking-createBooking-Book-45159--a-new-booking-successfully-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\dragAndDrop.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="41.263" errors="0">
-<testcase name="drag and drop scenario › should download a file" classname="herokuapp\dragAndDrop.spec.ts" time="20.168">
+<testsuite name="booking\deleteBooking.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.136" errors="0">
+<testcase name="Booking API - Create Booking--then delete booking › should create a new booking --&gt; delete th same booking successfully" classname="booking\deleteBooking.spec.ts" time="3.136">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-dragAndDrop-drag-8e8a1-ario-should-download-a-file-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="drag and drop scenario › should drag and drop using mouse events" classname="herokuapp\dragAndDrop.spec.ts" time="21.095">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-dragAndDrop-drag-76531-and-drop-using-mouse-events-chromium\trace.zip]]
+[[ATTACHMENT|test-results\booking-deleteBooking-Book-f7ffe-h-same-booking-successfully-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\example.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="56.008" errors="0">
-<testcase name="has title" classname="herokuapp\example.spec.ts" time="28.571">
+<testsuite name="booking\getAllBookingIds.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="2" failures="0" skipped="0" time="4.966" errors="0">
+<testcase name="Booking API - Get All Booking IDs › should retrieve all booking IDs successfully" classname="booking\getAllBookingIds.spec.ts" time="2.367">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-example-has-title-chromium\trace.zip]]
+[[ATTACHMENT|test-results\booking-getAllBookingIds-B-839c6-ll-booking-IDs-successfully-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="get started link" classname="herokuapp\example.spec.ts" time="27.437">
+<testcase name="Booking API - Get All Booking IDs › should get booking details by booking id" classname="booking\getAllBookingIds.spec.ts" time="2.599">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-example-get-started-link-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="herokuapp\fileUpload.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="1" time="19.037" errors="0">
-<testcase name="Handle fileupload › should upload a single file" classname="herokuapp\fileUpload.spec.ts" time="19.037">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-fileUpload-Handl-1d3da-should-upload-a-single-file-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle fileupload › should upload multiple files" classname="herokuapp\fileUpload.spec.ts" time="0">
-<properties>
-<property name="fixme" value="">
-</property>
-</properties>
-<skipped>
-</skipped>
-</testcase>
-</testsuite>
-<testsuite name="herokuapp\handleAlerts.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="5" failures="0" skipped="0" time="56.486" errors="0">
-<testcase name="Handle Alerts › should handle simple alert" classname="herokuapp\handleAlerts.spec.ts" time="9.733">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-66a46--should-handle-simple-alert-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle confirm alert" classname="herokuapp\handleAlerts.spec.ts" time="11.902">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-c1a07-should-handle-confirm-alert-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle confirm alert with cancel" classname="herokuapp\handleAlerts.spec.ts" time="13.645">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-96dd5-e-confirm-alert-with-cancel-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle prompt alert" classname="herokuapp\handleAlerts.spec.ts" time="11.554">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-06a0f--should-handle-prompt-alert-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle prompt alert with cancel" classname="herokuapp\handleAlerts.spec.ts" time="9.652">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-c257f-le-prompt-alert-with-cancel-chromium\trace.zip]]
+[[ATTACHMENT|test-results\booking-getAllBookingIds-B-dc19c-oking-details-by-booking-id-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\handleMultipleWindows.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.719" errors="0">
-<testcase name="Handle Multiple Windows › should handle multiple windows" classname="herokuapp\handleMultipleWindows.spec.ts" time="25.719">
+<testsuite name="booking\updateBooking.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="2" failures="0" skipped="0" time="4.794" errors="0">
+<testcase name="Booking API - Create Booking--&gt;Update same boking › should create a new booking then update same booking successfully" classname="booking\updateBooking.spec.ts" time="3.281">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleMultipleWi-895aa-uld-handle-multiple-windows-chromium\trace.zip]]
+[[ATTACHMENT|test-results\booking-updateBooking-Book-135ad-e-same-booking-successfully-chromium\trace.zip]]
 ]]>
 </system-out>
+<system-err>
+<![CDATA[Schema validation errors: [
+  {
+    instancePath: [32m''[39m,
+    schemaPath: [32m'#/required'[39m,
+    keyword: [32m'required'[39m,
+    params: { missingProperty: [32m'bookingid'[39m },
+    message: [32m"must have required property 'bookingid'"[39m
+  },
+  {
+    instancePath: [32m''[39m,
+    schemaPath: [32m'#/required'[39m,
+    keyword: [32m'required'[39m,
+    params: { missingProperty: [32m'booking'[39m },
+    message: [32m"must have required property 'booking'"[39m
+  }
+]
+]]>
+</system-err>
 </testcase>
-</testsuite>
-<testsuite name="herokuapp\handlesFrames.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="46.697" errors="0">
-<testcase name="handle frams › handle iframes" classname="herokuapp\handlesFrames.spec.ts" time="27.076">
+<testcase name="Booking API - Create Booking--&gt;Update same boking › should update a booking with PATCH Endpoint" classname="booking\updateBooking.spec.ts" time="1.513">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\trace.zip]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium-retry1\trace.zip]]
+[[ATTACHMENT|test-results\booking-updateBooking-Book-c9c01-booking-with-PATCH-Endpoint-chromium\trace.zip]]
 ]]>
 </system-out>
-</testcase>
-<testcase name="handle frams › handle normal frames" classname="herokuapp\handlesFrames.spec.ts" time="19.621">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-normal-frames-chromium\trace.zip]]
+<system-err>
+<![CDATA[Schema validation errors: [
+  {
+    instancePath: [32m''[39m,
+    schemaPath: [32m'#/required'[39m,
+    keyword: [32m'required'[39m,
+    params: { missingProperty: [32m'bookingid'[39m },
+    message: [32m"must have required property 'bookingid'"[39m
+  },
+  {
+    instancePath: [32m''[39m,
+    schemaPath: [32m'#/required'[39m,
+    keyword: [32m'required'[39m,
+    params: { missingProperty: [32m'booking'[39m },
+    message: [32m"must have required property 'booking'"[39m
+  }
+]
 ]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="herokuapp\keyboardActions.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="26.943" errors="0">
-<testcase name="Key board action scenario › keyboard actions" classname="herokuapp\keyboardActions.spec.ts" time="10.58">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-keyboardActions--943a4-n-scenario-keyboard-actions-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Key board action scenario › should combination of keys" classname="herokuapp\keyboardActions.spec.ts" time="16.363">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-keyboardActions--109a9--should-combination-of-keys-chromium\trace.zip]]
-]]>
-</system-out>
+</system-err>
 </testcase>
 </testsuite>
 </testsuites>

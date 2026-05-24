@@ -161,20 +161,20 @@
   },
   "suites": [
     {
-      "title": "herokuapp\\downloadFile.spec.ts",
-      "file": "herokuapp/downloadFile.spec.ts",
+      "title": "booking\\createBooking.spec.ts",
+      "file": "booking/createBooking.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Handle downloadFiles",
-          "file": "herokuapp/downloadFile.spec.ts",
-          "line": 3,
+          "title": "Booking API - Create Booking",
+          "file": "booking/createBooking.spec.ts",
+          "line": 6,
           "column": 6,
           "specs": [
             {
-              "title": "should download a file",
+              "title": "should create a new booking successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -189,18 +189,18 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 22186,
+                      "duration": 3057,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:12:25.911Z",
+                      "startTime": "2026-05-24T11:56:59.147Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-downloadFile-Han-690b8-iles-should-download-a-file-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-createBooking-Book-45159--a-new-booking-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -208,9 +208,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "1383d484d655bf78070f-70b47e61718138739b15",
-              "file": "herokuapp/downloadFile.spec.ts",
-              "line": 10,
+              "id": "c5ba676dc9cb801edbb1-c5a999ecd180c0225c49",
+              "file": "booking/createBooking.spec.ts",
+              "line": 8,
               "column": 9
             }
           ]
@@ -218,20 +218,20 @@
       ]
     },
     {
-      "title": "herokuapp\\dragAndDrop.spec.ts",
-      "file": "herokuapp/dragAndDrop.spec.ts",
+      "title": "booking\\deleteBooking.spec.ts",
+      "file": "booking/deleteBooking.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "drag and drop scenario",
-          "file": "herokuapp/dragAndDrop.spec.ts",
-          "line": 3,
+          "title": "Booking API - Create Booking--then delete booking",
+          "file": "booking/deleteBooking.spec.ts",
+          "line": 6,
           "column": 6,
           "specs": [
             {
-              "title": "should download a file",
+              "title": "should create a new booking --> delete th same booking successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -246,18 +246,18 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 20168,
+                      "duration": 3136,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:12:25.780Z",
+                      "startTime": "2026-05-24T11:56:59.521Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-dragAndDrop-drag-8e8a1-ario-should-download-a-file-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-deleteBooking-Book-f7ffe-h-same-booking-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -265,13 +265,30 @@
                   "status": "expected"
                 }
               ],
-              "id": "310b383d8b5970416f36-af2365e37ffa71a0a8b4",
-              "file": "herokuapp/dragAndDrop.spec.ts",
-              "line": 10,
+              "id": "c08b771a730c68e86cd5-aee22f7ea2713d0c9b17",
+              "file": "booking/deleteBooking.spec.ts",
+              "line": 8,
               "column": 9
-            },
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "booking\\getAllBookingIds.spec.ts",
+      "file": "booking/getAllBookingIds.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Booking API - Get All Booking IDs",
+          "file": "booking/getAllBookingIds.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "title": "should drag and drop using mouse events",
+              "title": "should retrieve all booking IDs successfully",
               "ok": true,
               "tags": [],
               "tests": [
@@ -286,18 +303,18 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 21095,
+                      "duration": 2367,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:12:26.422Z",
+                      "startTime": "2026-05-24T11:56:58.631Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-dragAndDrop-drag-76531-and-drop-using-mouse-events-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-getAllBookingIds-B-839c6-ll-booking-IDs-successfully-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -305,118 +322,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "310b383d8b5970416f36-b38b84196de8b6ae672b",
-              "file": "herokuapp/dragAndDrop.spec.ts",
-              "line": 20,
+              "id": "188d7e04f81f39c43d9d-b3b875ae19bfc8127db9",
+              "file": "booking/getAllBookingIds.spec.ts",
+              "line": 5,
               "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "herokuapp\\example.spec.ts",
-      "file": "herokuapp/example.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "has title",
-          "ok": true,
-          "tags": [],
-          "tests": [
+            },
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 28571,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-24T11:12:26.313Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-example-has-title-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "0ff6e6a404dffb9cb9d2-55df0e1a524375ee961f",
-          "file": "herokuapp/example.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "get started link",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 4,
-                  "status": "passed",
-                  "duration": 27437,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-05-24T11:12:26.039Z",
-                  "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-example-get-started-link-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "0ff6e6a404dffb9cb9d2-a49d1199a054c46e37f7",
-          "file": "herokuapp/example.spec.ts",
-          "line": 10,
-          "column": 5
-        }
-      ]
-    },
-    {
-      "title": "herokuapp\\fileUpload.spec.ts",
-      "file": "herokuapp/fileUpload.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Handle fileupload",
-          "file": "herokuapp/fileUpload.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should upload a single file",
+              "title": "should get booking details by booking id",
               "ok": true,
               "tags": [],
               "tests": [
@@ -428,21 +340,21 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 19037,
+                      "duration": 2599,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:12:49.645Z",
+                      "startTime": "2026-05-24T11:56:59.062Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-fileUpload-Handl-1d3da-should-upload-a-single-file-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-getAllBookingIds-B-dc19c-oking-details-by-booking-id-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -450,82 +362,74 @@
                   "status": "expected"
                 }
               ],
-              "id": "e06a6c7cddb4c781f760-d3462b5e6022cb029099",
-              "file": "herokuapp/fileUpload.spec.ts",
+              "id": "188d7e04f81f39c43d9d-2e619728da5ee12c784e",
+              "file": "booking/getAllBookingIds.spec.ts",
+              "line": 13,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "booking\\updateBooking.spec.ts",
+      "file": "booking/updateBooking.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Booking API - Create Booking-->Update same boking",
+          "file": "booking/updateBooking.spec.ts",
+          "line": 7,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should create a new booking then update same booking successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 3281,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [
+                        {
+                          "text": "Schema validation errors: [\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'bookingid'\u001b[39m },\n    message: \u001b[32m\"must have required property 'bookingid'\"\u001b[39m\n  },\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'booking'\u001b[39m },\n    message: \u001b[32m\"must have required property 'booking'\"\u001b[39m\n  }\n]\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2026-05-24T11:56:59.759Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-updateBooking-Book-135ad-e-same-booking-successfully-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e7831fc3341f66681f4a-0679d509ab6f40e8dd48",
+              "file": "booking/updateBooking.spec.ts",
               "line": 9,
               "column": 9
             },
             {
-              "title": "should upload multiple files",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [
-                    {
-                      "type": "fixme",
-                      "location": {
-                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\fileUpload.spec.ts",
-                        "line": 16,
-                        "column": 10
-                      }
-                    }
-                  ],
-                  "expectedStatus": "skipped",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": -1,
-                      "parallelIndex": -1,
-                      "status": "skipped",
-                      "duration": 0,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:12:50.975Z",
-                      "annotations": [
-                        {
-                          "type": "fixme",
-                          "location": {
-                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\fileUpload.spec.ts",
-                            "line": 16,
-                            "column": 10
-                          }
-                        }
-                      ],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "e06a6c7cddb4c781f760-f23d18fff1d435360f94",
-              "file": "herokuapp/fileUpload.spec.ts",
-              "line": 16,
-              "column": 10
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "herokuapp\\handleAlerts.spec.ts",
-      "file": "herokuapp/handleAlerts.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Handle Alerts",
-          "file": "herokuapp/handleAlerts.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should handle simple alert",
+              "title": "should update a booking with PATCH Endpoint",
               "ok": true,
               "tags": [],
               "tests": [
@@ -540,390 +444,22 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 9733,
+                      "duration": 1513,
                       "errors": [],
                       "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:12:51.298Z",
-                      "annotations": [],
-                      "attachments": [
+                      "stderr": [
                         {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handleAlerts-Han-66a46--should-handle-simple-alert-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "745d6a46ef79fa0eebb5-636f577b065408073617",
-              "file": "herokuapp/handleAlerts.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "should handle confirm alert",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 11902,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:12:53.109Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handleAlerts-Han-c1a07-should-handle-confirm-alert-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "745d6a46ef79fa0eebb5-4b70c1349625f8494e86",
-              "file": "herokuapp/handleAlerts.spec.ts",
-              "line": 23,
-              "column": 9
-            },
-            {
-              "title": "should handle confirm alert with cancel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 13645,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:12:58.724Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handleAlerts-Han-96dd5-e-confirm-alert-with-cancel-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "745d6a46ef79fa0eebb5-83934aa9c1016bc7617c",
-              "file": "herokuapp/handleAlerts.spec.ts",
-              "line": 34,
-              "column": 9
-            },
-            {
-              "title": "should handle prompt alert",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 11554,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:12:59.151Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handleAlerts-Han-06a0f--should-handle-prompt-alert-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "745d6a46ef79fa0eebb5-0ed84bf2ba8441c44f2c",
-              "file": "herokuapp/handleAlerts.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "should handle prompt alert with cancel",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 9652,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:13:03.677Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handleAlerts-Han-c257f-le-prompt-alert-with-cancel-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "745d6a46ef79fa0eebb5-52a052cbb481a4815914",
-              "file": "herokuapp/handleAlerts.spec.ts",
-              "line": 58,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "herokuapp\\handleMultipleWindows.spec.ts",
-      "file": "herokuapp/handleMultipleWindows.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Handle Multiple Windows",
-          "file": "herokuapp/handleMultipleWindows.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "should handle multiple windows",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 25719,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:13:07.729Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handleMultipleWi-895aa-uld-handle-multiple-windows-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "78610d8dc4c5b123bb59-e6fc1d97963d10966df2",
-              "file": "herokuapp/handleMultipleWindows.spec.ts",
-              "line": 10,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "herokuapp\\handlesFrames.spec.ts",
-      "file": "herokuapp/handlesFrames.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "handle frams",
-          "file": "herokuapp/handlesFrames.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "handle iframes",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 20043,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Your content goes here.\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Your content goes here.\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\handlesFrames.spec.ts:15:22",
-                        "location": {
-                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\handlesFrames.spec.ts",
-                          "column": 22,
-                          "line": 15
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 13 |\u001b[39m        \u001b[36mconst\u001b[39m text\u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m herokuAppPage\u001b[33m.\u001b[39mgetTextInIFrame()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         expect(text)\u001b[33m.\u001b[39mtoBe(\u001b[32m'Your content goes here.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m         \u001b[90m//clear the text in the iframe\u001b[39m\n \u001b[90m 17 |\u001b[39m      \n \u001b[90m 18 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\handlesFrames.spec.ts",
-                            "column": 22,
-                            "line": 15
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"Your content goes here.\"\u001b[39m\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 13 |\u001b[39m        \u001b[36mconst\u001b[39m text\u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m herokuAppPage\u001b[33m.\u001b[39mgetTextInIFrame()\u001b[33m;\u001b[39m\n \u001b[90m 14 |\u001b[39m     \n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 15 |\u001b[39m         expect(text)\u001b[33m.\u001b[39mtoBe(\u001b[32m'Your content goes here.'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 16 |\u001b[39m         \u001b[90m//clear the text in the iframe\u001b[39m\n \u001b[90m 17 |\u001b[39m      \n \u001b[90m 18 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\handlesFrames.spec.ts:15:22\u001b[22m"
+                          "text": "Schema validation errors: [\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'bookingid'\u001b[39m },\n    message: \u001b[32m\"must have required property 'bookingid'\"\u001b[39m\n  },\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'booking'\u001b[39m },\n    message: \u001b[32m\"must have required property 'booking'\"\u001b[39m\n  }\n]\n"
                         }
                       ],
-                      "stdout": [],
-                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:13:11.505Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\herokuapp\\handlesFrames.spec.ts",
-                        "column": 22,
-                        "line": 15
-                      }
-                    },
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 7033,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-24T11:13:34.624Z",
+                      "startTime": "2026-05-24T11:57:04.544Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium-retry1\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "flaky"
-                }
-              ],
-              "id": "385d66c7ec902cb901c1-03751c15043acb4f0644",
-              "file": "herokuapp/handlesFrames.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "handle normal frames",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 19621,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:13:12.275Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-handlesFrames-handle-frams-handle-normal-frames-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-updateBooking-Book-c9c01-booking-with-PATCH-Endpoint-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -931,107 +467,10 @@
                   "status": "expected"
                 }
               ],
-              "id": "385d66c7ec902cb901c1-f9fdc53251c639fe20a8",
-              "file": "herokuapp/handlesFrames.spec.ts",
-              "line": 20,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "herokuapp\\keyboardActions.spec.ts",
-      "file": "herokuapp/keyboardActions.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Key board action scenario",
-          "file": "herokuapp/keyboardActions.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
-            {
-              "title": "keyboard actions",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 10580,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:13:13.686Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-keyboardActions--943a4-n-scenario-keyboard-actions-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b3f694e67afc9a0d1e2a-a38c55099674d406f29e",
-              "file": "herokuapp/keyboardActions.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "should combination of keys",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 16363,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-05-24T11:13:14.103Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\herokuapp-keyboardActions--109a9--should-combination-of-keys-chromium\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "b3f694e67afc9a0d1e2a-98fc6505fc58c92eba47",
-              "file": "herokuapp/keyboardActions.spec.ts",
-              "line": 30,
-              "column": 9
+              "id": "e7831fc3341f66681f4a-5844978ba31442690ada",
+              "file": "booking/updateBooking.spec.ts",
+              "line": 35,
+              "column": 5
             }
           ]
         }
@@ -1040,11 +479,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-24T11:12:16.298Z",
-    "duration": 86867.023,
-    "expected": 15,
-    "skipped": 1,
+    "startTime": "2026-05-24T11:56:42.443Z",
+    "duration": 24217.6,
+    "expected": 6,
+    "skipped": 0,
     "unexpected": 0,
-    "flaky": 1
+    "flaky": 0
   }
 }
