@@ -1,90 +1,268 @@
-<testsuites id="" name="" tests="6" failures="0" skipped="0" errors="0" time="24.217599999999997">
-<testsuite name="booking\createBooking.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.057" errors="0">
-<testcase name="Booking API - Create Booking › should create a new booking successfully" classname="booking\createBooking.spec.ts" time="3.057">
+<testsuites id="" name="" tests="24" failures="1" skipped="0" errors="0" time="179.91973499999997">
+<testsuite name="saucedemo\cartpage.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="4" failures="0" skipped="0" time="143.466" errors="0">
+<testcase name="Cart page tests › Navigate to cart page" classname="saucedemo\cartpage.spec.ts" time="35.361">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\booking-createBooking-Book-45159--a-new-booking-successfully-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › click on continue shopping button and verify navigation to product page" classname="saucedemo\cartpage.spec.ts" time="35.995">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › remove product from cart and verify cart count" classname="saucedemo\cartpage.spec.ts" time="36.581">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › click on checkout button and verify navigation to checkout page" classname="saucedemo\cartpage.spec.ts" time="35.529">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="booking\deleteBooking.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="1" failures="0" skipped="0" time="3.136" errors="0">
-<testcase name="Booking API - Create Booking--then delete booking › should create a new booking --&gt; delete th same booking successfully" classname="booking\deleteBooking.spec.ts" time="3.136">
+<testsuite name="saucedemo\checkout-csv-data-driven.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="3" failures="0" skipped="0" time="88.266" errors="0">
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow with data set 1-JohnDoe 60543" classname="saucedemo\checkout-csv-data-driven.spec.ts" time="36.971">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\booking-deleteBooking-Book-f7ffe-h-same-booking-successfully-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow with data set 2-rameshch 560049" classname="saucedemo\checkout-csv-data-driven.spec.ts" time="26.857">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-f42c4--data-set-2-rameshch-560049-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow with data set 3-sekharts 560045" classname="saucedemo\checkout-csv-data-driven.spec.ts" time="24.438">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-0f971--data-set-3-sekharts-560045-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="booking\getAllBookingIds.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="2" failures="0" skipped="0" time="4.966" errors="0">
-<testcase name="Booking API - Get All Booking IDs › should retrieve all booking IDs successfully" classname="booking\getAllBookingIds.spec.ts" time="2.367">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\booking-getAllBookingIds-B-839c6-ll-booking-IDs-successfully-chromium\trace.zip]]
+<testsuite name="saucedemo\checkout-csv-data.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="1" failures="1" skipped="0" time="45.475" errors="0">
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow" classname="saucedemo\checkout-csv-data.spec.ts" time="45.475">
+<failure message="checkout-csv-data.spec.ts:30:9 verify order completion flow" type="FAILURE">
+<![CDATA[  [chromium] › saucedemo\checkout-csv-data.spec.ts:30:9 › checkout flow test - reading CSV file single data › verify order completion flow 
+
+    Error: locator.fill: value: expected string, got undefined
+
+       at ..\pages\checkoutPage.ts:33
+
+      31 |
+      32 |     async fillCheckoutInformation(firstName: string, lastName: string, postalCode: string) {
+    > 33 |         await this.firstNameInput.fill(firstName);
+         |                                   ^
+      34 |         await this.lastNameInput.fill(lastName);
+      35 |         await this.postalCodeInput.fill(postalCode);
+      36 |     }
+        at CheckoutPage.fillCheckoutInformation (C:\Users\Public\PlaywrightE2EFramework-Mar292026\pages\checkoutPage.ts:33:35)
+        at C:\Users\Public\PlaywrightE2EFramework-Mar292026\tests\saucedemo\checkout-csv-data.spec.ts:31:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: locator.fill: value: expected string, got undefined
+
+       at ..\pages\checkoutPage.ts:33
+
+      31 |
+      32 |     async fillCheckoutInformation(firstName: string, lastName: string, postalCode: string) {
+    > 33 |         await this.firstNameInput.fill(firstName);
+         |                                   ^
+      34 |         await this.lastNameInput.fill(lastName);
+      35 |         await this.postalCodeInput.fill(postalCode);
+      36 |     }
+        at CheckoutPage.fillCheckoutInformation (C:\Users\Public\PlaywrightE2EFramework-Mar292026\pages\checkoutPage.ts:33:35)
+        at C:\Users\Public\PlaywrightE2EFramework-Mar292026\tests\saucedemo\checkout-csv-data.spec.ts:31:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
 ]]>
-</system-out>
-</testcase>
-<testcase name="Booking API - Get All Booking IDs › should get booking details by booking id" classname="booking\getAllBookingIds.spec.ts" time="2.599">
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\booking-getAllBookingIds-B-dc19c-oking-details-by-booking-id-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="booking\updateBooking.spec.ts" timestamp="2026-05-24T11:56:45.000Z" hostname="chromium" tests="2" failures="0" skipped="0" time="4.794" errors="0">
-<testcase name="Booking API - Create Booking--&gt;Update same boking › should create a new booking then update same booking successfully" classname="booking\updateBooking.spec.ts" time="3.281">
+<testsuite name="saucedemo\checkout-datadriven.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="3" failures="0" skipped="0" time="63.269" errors="0">
+<testcase name="checkout page tests › verify order completion flow with data set 1-JohnDoe 12345" classname="saucedemo\checkout-datadriven.spec.ts" time="23.336">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\booking-updateBooking-Book-135ad-e-same-booking-successfully-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium\trace.zip]]
 ]]>
 </system-out>
-<system-err>
-<![CDATA[Schema validation errors: [
-  {
-    instancePath: [32m''[39m,
-    schemaPath: [32m'#/required'[39m,
-    keyword: [32m'required'[39m,
-    params: { missingProperty: [32m'bookingid'[39m },
-    message: [32m"must have required property 'bookingid'"[39m
-  },
-  {
-    instancePath: [32m''[39m,
-    schemaPath: [32m'#/required'[39m,
-    keyword: [32m'required'[39m,
-    params: { missingProperty: [32m'booking'[39m },
-    message: [32m"must have required property 'booking'"[39m
-  }
-]
-]]>
-</system-err>
 </testcase>
-<testcase name="Booking API - Create Booking--&gt;Update same boking › should update a booking with PATCH Endpoint" classname="booking\updateBooking.spec.ts" time="1.513">
+<testcase name="checkout page tests › verify order completion flow with data set 2-JaneSmith 54321" classname="saucedemo\checkout-datadriven.spec.ts" time="18.374">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\booking-updateBooking-Book-c9c01-booking-with-PATCH-Endpoint-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-a2e5d--data-set-2-JaneSmith-54321-chromium\trace.zip]]
 ]]>
 </system-out>
-<system-err>
-<![CDATA[Schema validation errors: [
-  {
-    instancePath: [32m''[39m,
-    schemaPath: [32m'#/required'[39m,
-    keyword: [32m'required'[39m,
-    params: { missingProperty: [32m'bookingid'[39m },
-    message: [32m"must have required property 'bookingid'"[39m
-  },
-  {
-    instancePath: [32m''[39m,
-    schemaPath: [32m'#/required'[39m,
-    keyword: [32m'required'[39m,
-    params: { missingProperty: [32m'booking'[39m },
-    message: [32m"must have required property 'booking'"[39m
-  }
-]
+</testcase>
+<testcase name="checkout page tests › verify order completion flow with data set 3-AliceJohnson 67890" classname="saucedemo\checkout-datadriven.spec.ts" time="21.559">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-125a7-ta-set-3-AliceJohnson-67890-chromium\trace.zip]]
 ]]>
-</system-err>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="saucedemo\checkout.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="3" failures="0" skipped="0" time="68.752" errors="0">
+<testcase name="checkout page tests › verify order completion flow" classname="saucedemo\checkout.spec.ts" time="25.586">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout page tests › verify cancel button functionality on checkout page" classname="saucedemo\checkout.spec.ts" time="17.436">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-b73d6-ctionality-on-checkout-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout page tests › Verify cancel button in checkout overview page" classname="saucedemo\checkout.spec.ts" time="25.73">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-284a4-n-in-checkout-overview-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="saucedemo\login.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="3" failures="0" skipped="0" time="49.799" errors="0">
+<testcase name="Login Tests › should login with valid credentials" classname="saucedemo\login.spec.ts" time="20.399">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-login-Login-Test-1503d-ogin-with-valid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with locked out credentials" classname="saucedemo\login.spec.ts" time="12.33">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-login-Login-Test-ef31e-with-locked-out-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with invalid credentials" classname="saucedemo\login.spec.ts" time="17.07">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-login-Login-Test-63b13-or-with-invalid-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="saucedemo\products.spec.ts" timestamp="2026-05-24T13:55:30.240Z" hostname="chromium" tests="7" failures="0" skipped="0" time="121.702" errors="0">
+<testcase name="product page tests › should display products and verfy product list" classname="saucedemo\products.spec.ts" time="18.685">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-d052b-ucts-and-verfy-product-list-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add products to cart and verify cart count" classname="saucedemo\products.spec.ts" time="21.196">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-a543e--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add product by name and verify cart count" classname="saucedemo\products.spec.ts" time="19.167">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-8ea4a--name-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Remove product by name and verify cart count" classname="saucedemo\products.spec.ts" time="23.167">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-26f77--name-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add all products to cart and verify cart count" classname="saucedemo\products.spec.ts" time="19.665">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-94c32--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › sort products by price low to high and verify sorting" classname="saucedemo\products.spec.ts" time="11.622">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-37f6b--to-high-and-verify-sorting-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Navigate to cart page" classname="saucedemo\products.spec.ts" time="8.2">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-page-tests-Navigate-to-cart-page-chromium\trace.zip]]
+]]>
+</system-out>
 </testcase>
 </testsuite>
 </testsuites>

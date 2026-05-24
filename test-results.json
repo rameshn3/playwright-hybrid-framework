@@ -161,20 +161,20 @@
   },
   "suites": [
     {
-      "title": "booking\\createBooking.spec.ts",
-      "file": "booking/createBooking.spec.ts",
+      "title": "saucedemo\\cartpage.spec.ts",
+      "file": "saucedemo/cartpage.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Booking API - Create Booking",
-          "file": "booking/createBooking.spec.ts",
-          "line": 6,
+          "title": "Cart page tests",
+          "file": "saucedemo/cartpage.spec.ts",
+          "line": 3,
           "column": 6,
           "specs": [
             {
-              "title": "should create a new booking successfully",
+              "title": "Navigate to cart page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -189,18 +189,18 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3057,
+                      "duration": 35361,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:56:59.147Z",
+                      "startTime": "2026-05-24T13:55:46.219Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-createBooking-Book-45159--a-new-booking-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -208,30 +208,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "c5ba676dc9cb801edbb1-c5a999ecd180c0225c49",
-              "file": "booking/createBooking.spec.ts",
-              "line": 8,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "booking\\deleteBooking.spec.ts",
-      "file": "booking/deleteBooking.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Booking API - Create Booking--then delete booking",
-          "file": "booking/deleteBooking.spec.ts",
-          "line": 6,
-          "column": 6,
-          "specs": [
+              "id": "805ecc948cac3bd9e3e4-a885d25e451ae3731afb",
+              "file": "saucedemo/cartpage.spec.ts",
+              "line": 15,
+              "column": 6
+            },
             {
-              "title": "should create a new booking --> delete th same booking successfully",
+              "title": "click on continue shopping button and verify navigation to product page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -246,18 +229,18 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3136,
+                      "duration": 35995,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:56:59.521Z",
+                      "startTime": "2026-05-24T13:55:43.456Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-deleteBooking-Book-f7ffe-h-same-booking-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -265,30 +248,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "c08b771a730c68e86cd5-aee22f7ea2713d0c9b17",
-              "file": "booking/deleteBooking.spec.ts",
-              "line": 8,
-              "column": 9
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "booking\\getAllBookingIds.spec.ts",
-      "file": "booking/getAllBookingIds.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Booking API - Get All Booking IDs",
-          "file": "booking/getAllBookingIds.spec.ts",
-          "line": 3,
-          "column": 6,
-          "specs": [
+              "id": "805ecc948cac3bd9e3e4-d9558a036f4253ac9f7c",
+              "file": "saucedemo/cartpage.spec.ts",
+              "line": 20,
+              "column": 7
+            },
             {
-              "title": "should retrieve all booking IDs successfully",
+              "title": "remove product from cart and verify cart count",
               "ok": true,
               "tags": [],
               "tests": [
@@ -303,18 +269,18 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2367,
+                      "duration": 36581,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:56:58.631Z",
+                      "startTime": "2026-05-24T13:55:43.496Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-getAllBookingIds-B-839c6-ll-booking-IDs-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -322,13 +288,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "188d7e04f81f39c43d9d-b3b875ae19bfc8127db9",
-              "file": "booking/getAllBookingIds.spec.ts",
-              "line": 5,
+              "id": "805ecc948cac3bd9e3e4-c46e48441712f73adb09",
+              "file": "saucedemo/cartpage.spec.ts",
+              "line": 28,
               "column": 9
             },
             {
-              "title": "should get booking details by booking id",
+              "title": "click on checkout button and verify navigation to checkout page",
               "ok": true,
               "tags": [],
               "tests": [
@@ -343,18 +309,18 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2599,
+                      "duration": 35529,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:56:59.062Z",
+                      "startTime": "2026-05-24T13:55:43.457Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-getAllBookingIds-B-dc19c-oking-details-by-booking-id-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -362,9 +328,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "188d7e04f81f39c43d9d-2e619728da5ee12c784e",
-              "file": "booking/getAllBookingIds.spec.ts",
-              "line": 13,
+              "id": "805ecc948cac3bd9e3e4-b3eab8b8310d32724c16",
+              "file": "saucedemo/cartpage.spec.ts",
+              "line": 38,
               "column": 9
             }
           ]
@@ -372,20 +338,20 @@
       ]
     },
     {
-      "title": "booking\\updateBooking.spec.ts",
-      "file": "booking/updateBooking.spec.ts",
+      "title": "saucedemo\\checkout-csv-data-driven.spec.ts",
+      "file": "saucedemo/checkout-csv-data-driven.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "Booking API - Create Booking-->Update same boking",
-          "file": "booking/updateBooking.spec.ts",
-          "line": 7,
+          "title": "checkout flow test - reading CSV file single data",
+          "file": "saucedemo/checkout-csv-data-driven.spec.ts",
+          "line": 16,
           "column": 6,
           "specs": [
             {
-              "title": "should create a new booking then update same booking successfully",
+              "title": "verify order completion flow with data set 1-JohnDoe 60543",
               "ok": true,
               "tags": [],
               "tests": [
@@ -400,22 +366,18 @@
                       "workerIndex": 4,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 3281,
+                      "duration": 36971,
                       "errors": [],
                       "stdout": [],
-                      "stderr": [
-                        {
-                          "text": "Schema validation errors: [\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'bookingid'\u001b[39m },\n    message: \u001b[32m\"must have required property 'bookingid'\"\u001b[39m\n  },\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'booking'\u001b[39m },\n    message: \u001b[32m\"must have required property 'booking'\"\u001b[39m\n  }\n]\n"
-                        }
-                      ],
+                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:56:59.759Z",
+                      "startTime": "2026-05-24T13:55:44.925Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-updateBooking-Book-135ad-e-same-booking-successfully-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -423,13 +385,304 @@
                   "status": "expected"
                 }
               ],
-              "id": "e7831fc3341f66681f4a-0679d509ab6f40e8dd48",
-              "file": "booking/updateBooking.spec.ts",
-              "line": 9,
-              "column": 9
+              "id": "8d6d3e3d322163f1e2ba-2e465a0604106c1f7c77",
+              "file": "saucedemo/checkout-csv-data-driven.spec.ts",
+              "line": 32,
+              "column": 14
             },
             {
-              "title": "should update a booking with PATCH Endpoint",
+              "title": "verify order completion flow with data set 2-rameshch 560049",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 26857,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:56:27.474Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-f42c4--data-set-2-rameshch-560049-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d6d3e3d322163f1e2ba-4587a6f4bdb97e344c90",
+              "file": "saucedemo/checkout-csv-data-driven.spec.ts",
+              "line": 32,
+              "column": 14
+            },
+            {
+              "title": "verify order completion flow with data set 3-sekharts 560045",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 24438,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:56:28.214Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-0f971--data-set-3-sekharts-560045-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "8d6d3e3d322163f1e2ba-551ca28b1deb9eb4edb9",
+              "file": "saucedemo/checkout-csv-data-driven.spec.ts",
+              "line": 32,
+              "column": 14
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "saucedemo\\checkout-csv-data.spec.ts",
+      "file": "saucedemo/checkout-csv-data.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "checkout flow test - reading CSV file single data",
+          "file": "saucedemo/checkout-csv-data.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "verify order completion flow",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 19124,
+                      "error": {
+                        "message": "Error: locator.fill: value: expected string, got undefined",
+                        "stack": "Error: locator.fill: value: expected string, got undefined\n    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
+                          "column": 35,
+                          "line": 33
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
+                            "column": 35,
+                            "line": 33
+                          },
+                          "message": "Error: locator.fill: value: expected string, got undefined\n\n\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m\n\u001b[2m    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\u001b[22m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:56:28.383Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
+                        "column": 35,
+                        "line": 33
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 26351,
+                      "error": {
+                        "message": "Error: locator.fill: value: expected string, got undefined",
+                        "stack": "Error: locator.fill: value: expected string, got undefined\n    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
+                          "column": 35,
+                          "line": 33
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
+                            "column": 35,
+                            "line": 33
+                          },
+                          "message": "Error: locator.fill: value: expected string, got undefined\n\n\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m\n\u001b[2m    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\u001b[22m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-24T13:57:33.008Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
+                        "column": 35,
+                        "line": 33
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ffbbbe48fa8d5500f053-4612b00818a8dbd8c1ce",
+              "file": "saucedemo/checkout-csv-data.spec.ts",
+              "line": 30,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "saucedemo\\checkout-datadriven.spec.ts",
+      "file": "saucedemo/checkout-datadriven.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "checkout page tests",
+          "file": "saucedemo/checkout-datadriven.spec.ts",
+          "line": 16,
+          "column": 6,
+          "specs": [
+            {
+              "title": "verify order completion flow with data set 1-JohnDoe 12345",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 23336,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:56:32.171Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1c9b5106d2abd0abae2-7d0fbe0eda1a5c15ec94",
+              "file": "saucedemo/checkout-datadriven.spec.ts",
+              "line": 32,
+              "column": 13
+            },
+            {
+              "title": "verify order completion flow with data set 2-JaneSmith 54321",
               "ok": true,
               "tags": [],
               "tests": [
@@ -444,22 +697,18 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1513,
+                      "duration": 18374,
                       "errors": [],
                       "stdout": [],
-                      "stderr": [
-                        {
-                          "text": "Schema validation errors: [\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'bookingid'\u001b[39m },\n    message: \u001b[32m\"must have required property 'bookingid'\"\u001b[39m\n  },\n  {\n    instancePath: \u001b[32m''\u001b[39m,\n    schemaPath: \u001b[32m'#/required'\u001b[39m,\n    keyword: \u001b[32m'required'\u001b[39m,\n    params: { missingProperty: \u001b[32m'booking'\u001b[39m },\n    message: \u001b[32m\"must have required property 'booking'\"\u001b[39m\n  }\n]\n"
-                        }
-                      ],
+                      "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T11:57:04.544Z",
+                      "startTime": "2026-05-24T13:56:40.399Z",
                       "annotations": [],
                       "attachments": [
                         {
                           "name": "trace",
                           "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\booking-updateBooking-Book-c9c01-booking-with-PATCH-Endpoint-chromium\\trace.zip"
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-datadri-a2e5d--data-set-2-JaneSmith-54321-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -467,10 +716,630 @@
                   "status": "expected"
                 }
               ],
-              "id": "e7831fc3341f66681f4a-5844978ba31442690ada",
-              "file": "booking/updateBooking.spec.ts",
-              "line": 35,
+              "id": "c1c9b5106d2abd0abae2-22bad3540f504364f12c",
+              "file": "saucedemo/checkout-datadriven.spec.ts",
+              "line": 32,
+              "column": 13
+            },
+            {
+              "title": "verify order completion flow with data set 3-AliceJohnson 67890",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21559,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:56:57.264Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-datadri-125a7-ta-set-3-AliceJohnson-67890-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1c9b5106d2abd0abae2-70a9fdfca14c89ddcde1",
+              "file": "saucedemo/checkout-datadriven.spec.ts",
+              "line": 32,
+              "column": 13
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "saucedemo\\checkout.spec.ts",
+      "file": "saucedemo/checkout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "checkout page tests",
+          "file": "saucedemo/checkout.spec.ts",
+          "line": 15,
+          "column": 6,
+          "specs": [
+            {
+              "title": "verify order completion flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 25586,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:56:58.263Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed12acc0108d051d6837-c84a5ba4fba896940787",
+              "file": "saucedemo/checkout.spec.ts",
+              "line": 30,
+              "column": 9
+            },
+            {
+              "title": "verify cancel button functionality on checkout page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 17436,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:03.531Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-checkou-b73d6-ctionality-on-checkout-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed12acc0108d051d6837-bc6299e57da9c4993ccb",
+              "file": "saucedemo/checkout.spec.ts",
+              "line": 40,
+              "column": 9
+            },
+            {
+              "title": "Verify cancel button in checkout overview page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 25730,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:08.256Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-checkou-284a4-n-in-checkout-overview-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ed12acc0108d051d6837-ffff5790ceb35e780b2d",
+              "file": "saucedemo/checkout.spec.ts",
+              "line": 45,
               "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "saucedemo\\login.spec.ts",
+      "file": "saucedemo/login.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Login Tests",
+          "file": "saucedemo/login.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should login with valid credentials",
+              "ok": true,
+              "tags": [
+                "smoke",
+                "validlogin"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20399,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:22.996Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-login-Login-Test-1503d-ogin-with-valid-credentials-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "87a74ef46e8bd881bda8-600d4acc2c4ef28ba600",
+              "file": "saucedemo/login.spec.ts",
+              "line": 5,
+              "column": 9
+            },
+            {
+              "title": "should show error with locked out credentials",
+              "ok": true,
+              "tags": [
+                "regression",
+                "lockedout"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 12330,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:24.703Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-login-Login-Test-ef31e-with-locked-out-credentials-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "87a74ef46e8bd881bda8-39714c6697ca0caffd43",
+              "file": "saucedemo/login.spec.ts",
+              "line": 16,
+              "column": 9
+            },
+            {
+              "title": "should show error with invalid credentials",
+              "ok": true,
+              "tags": [
+                "sanity",
+                "invalidlogin"
+              ],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 17070,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:32.660Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-login-Login-Test-63b13-or-with-invalid-credentials-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "87a74ef46e8bd881bda8-d7e73e657c6a7f67a32a",
+              "file": "saucedemo/login.spec.ts",
+              "line": 24,
+              "column": 9
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "saucedemo\\products.spec.ts",
+      "file": "saucedemo/products.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "product page tests",
+          "file": "saucedemo/products.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display products and verfy product list",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 18685,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:41.646Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-d052b-ucts-and-verfy-product-list-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-69c3b4fa20fb9a84770c",
+              "file": "saucedemo/products.spec.ts",
+              "line": 12,
+              "column": 9
+            },
+            {
+              "title": "Add products to cart and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 21196,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:42.078Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-a543e--cart-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-2c410ed96b7d5d883a38",
+              "file": "saucedemo/products.spec.ts",
+              "line": 19,
+              "column": 9
+            },
+            {
+              "title": "Add product by name and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 19167,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:49.774Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-8ea4a--name-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-274cdb918513ffe33224",
+              "file": "saucedemo/products.spec.ts",
+              "line": 26,
+              "column": 9
+            },
+            {
+              "title": "Remove product by name and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 23167,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:57:51.360Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-26f77--name-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-af15be6be123ff36f71d",
+              "file": "saucedemo/products.spec.ts",
+              "line": 32,
+              "column": 9
+            },
+            {
+              "title": "Add all products to cart and verify cart count",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 19665,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:58:02.513Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-94c32--cart-and-verify-cart-count-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-d20592c42791034b5fab",
+              "file": "saucedemo/products.spec.ts",
+              "line": 39,
+              "column": 9
+            },
+            {
+              "title": "sort products by price low to high and verify sorting",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11622,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:58:08.924Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-37f6b--to-high-and-verify-sorting-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-df9a1688495156e3d9d0",
+              "file": "saucedemo/products.spec.ts",
+              "line": 45,
+              "column": 5
+            },
+            {
+              "title": "Navigate to cart page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8200,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-24T13:58:12.554Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-products-product-page-tests-Navigate-to-cart-page-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "e9287920332977f019b2-c89e068942620ca21564",
+              "file": "saucedemo/products.spec.ts",
+              "line": 52,
+              "column": 9
             }
           ]
         }
@@ -479,11 +1348,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-24T11:56:42.443Z",
-    "duration": 24217.6,
-    "expected": 6,
+    "startTime": "2026-05-24T13:55:29.736Z",
+    "duration": 179919.735,
+    "expected": 23,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }
