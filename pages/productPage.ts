@@ -3,26 +3,30 @@ import {BasePage} from './basePage';
 
 export class ProductPage extends BasePage {  
     private productTitle: Locator;
-    private productDescription: Locator;
+    private productName: Locator;
     private productPrice: Locator;
     private addToCartButton: Locator;
     private removeFromCartButton: Locator;
     private shoppingCartIcon: Locator;
     private hamburgerMenu: Locator;
     private logoutButton: Locator;
-    private productList: Locator;   
+    private productList: Locator;
+    private cartItemCount: Locator; 
+    private productSortDropdown: Locator;
 
     constructor(page: Page) {
         super(page);
-        this.productTitle = page.locator('.title');
-        this.productDescription = page.locator('.inventory_item_name');
+        this.productTitle = page.getByText('Products');
+        this.productName = page.locator('.inventory_item_name');
         this.productPrice = page.locator('.inventory_item_price');
         this.addToCartButton = page.getByText('Add to cart');
         this.removeFromCartButton = page.getByText('Remove');
         this.shoppingCartIcon = page.locator('.shopping_cart_link');
+        this.cartItemCount = page.locator('.shopping_cart_badge');
         this.hamburgerMenu = page.locator('#react-burger-menu-btn');
-        this.logoutButton = page.getByText('Logout');
+        this.logoutButton = page.getByRole('link',{name:'Logout'});
         this.productList = page.locator('.inventory_item');
+        this.productSortDropdown = page.locator('.product_sort_container');
     }
 
     //chck product page is loaded by checking the title
@@ -33,7 +37,7 @@ export class ProductPage extends BasePage {
 
     //add products by index (0,1,2...)
     async addProductToCartByIndex(index: number) {
-       // const addButtons = await this.addToCartButton.allTextContents;
+      
          const addButtons = await this.addToCartButton.elementHandles(); 
         if (index < addButtons.length) {
             await addButtons[index].click();
@@ -75,7 +79,7 @@ export class ProductPage extends BasePage {
 
     //get product count in cart
     async getCartItemCount(): Promise<number> {
-        const countText = await this.shoppingCartIcon.textContent();
+        const countText = await this.cartItemCount.textContent();
         return countText ? parseInt(countText.trim()) : 0;
     }   
 
@@ -90,8 +94,8 @@ export class ProductPage extends BasePage {
     }
 
     async sortProductsBy(option: string) {
-        const sortSelect = this.page.locator('.product_sort_container');
-        await sortSelect.selectOption({ label: option });
+       
+        await this.productSortDropdown.selectOption({ label: option });
     }
 
     async getProductPrices(): Promise<number[]> {

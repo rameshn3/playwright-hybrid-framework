@@ -9,6 +9,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write
+
 jobs:
 
   ui-tests:
@@ -20,7 +23,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -34,12 +37,17 @@ jobs:
       - name: Install Allure Commandline
         run: npm install -g allure-commandline
 
+      - name: Clean old reports
+        run: |
+          rm -rf allure-results
+          rm -rf allure-report-ui
+
       - name: Run SauceDemo Tests
         run: npm run test:ui
 
       - name: Generate UI Allure Report
         if: always()
-        run: allure generate allure-results --clean -o allure-report
+        run: allure generate allure-results --clean -o allure-report-ui
 
       - name: Upload UI Playwright Report
         if: always()
@@ -48,12 +56,20 @@ jobs:
           name: ui-playwright-report
           path: playwright-report/
 
-      - name: Upload UI Allure HTML Report
+      - name: Upload UI Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: ui-allure-report
-          path: allure-report/
+          path: allure-report-ui/
+
+      - name: Deploy UI Allure Report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report-ui
+          destination_dir: ui
 
   api-tests:
 
@@ -64,7 +80,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -78,12 +94,17 @@ jobs:
       - name: Install Allure Commandline
         run: npm install -g allure-commandline
 
+      - name: Clean old reports
+        run: |
+          rm -rf allure-results
+          rm -rf allure-report-api
+
       - name: Run Booking API Tests
         run: npm run test:api
 
       - name: Generate API Allure Report
         if: always()
-        run: allure generate allure-results --clean -o allure-report
+        run: allure generate allure-results --clean -o allure-report-api
 
       - name: Upload API Playwright Report
         if: always()
@@ -92,12 +113,20 @@ jobs:
           name: api-playwright-report
           path: playwright-report/
 
-      - name: Upload API Allure HTML Report
+      - name: Upload API Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: api-allure-report
-          path: allure-report/
+          path: allure-report-api/
+
+      - name: Deploy API Allure Report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report-api
+          destination_dir: api
 
   heroku-tests:
 
@@ -108,7 +137,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 20
@@ -122,12 +151,17 @@ jobs:
       - name: Install Allure Commandline
         run: npm install -g allure-commandline
 
+      - name: Clean old reports
+        run: |
+          rm -rf allure-results
+          rm -rf allure-report-heroku
+
       - name: Run HerokuApp Tests
         run: npm run test:heroku
 
       - name: Generate Heroku Allure Report
         if: always()
-        run: allure generate allure-results --clean -o allure-report
+        run: allure generate allure-results --clean -o allure-report-heroku
 
       - name: Upload Heroku Playwright Report
         if: always()
@@ -136,9 +170,17 @@ jobs:
           name: heroku-playwright-report
           path: playwright-report/
 
-      - name: Upload Heroku Allure HTML Report
+      - name: Upload Heroku Allure Report
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: heroku-allure-report
-          path: allure-report/
+          path: allure-report-heroku/
+
+      - name: Deploy Heroku Allure Report to GitHub Pages
+        if: always()
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./allure-report-heroku
+          destination_dir: heroku

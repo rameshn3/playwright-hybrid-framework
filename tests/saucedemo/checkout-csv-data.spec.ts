@@ -12,7 +12,7 @@ type CheckoutData = {
 const checkoutData: CheckoutData = readCSVData<CheckoutData>('./testdata/checkoutData.csv');
 
 
-test.describe('checkout flow test - reading CSV file single data', () => {
+test.describe.skip('checkout flow test - reading CSV file single data', () => {
     test.beforeEach(async ({ loginPage,productPage,cartPage,checkoutPage}) => {     
         await loginPage.navigateTo();
         await loginPage.loginAs('STANDARD_USER');

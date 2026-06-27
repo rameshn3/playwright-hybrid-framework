@@ -19,7 +19,8 @@ export class LoginPage extends BasePage {
       //  this.loginButton = page.getByRole('button', { name: 'Login' });
         this.swaglabsLogo = page.locator('.login_logo'); //.classvalue or [attributenam='attributevalue']
       //  this.swaglabsLogo = page.getByText('Swag Labs');
-       this.errorMessage = this.page.getByRole('heading', { level: 3 });
+      // this.errorMessage = this.page.locator('div.error-message-container.error');
+      this.errorMessage = page.getByRole('heading', { name: 'Epic sadface: Username is required' });
     }
 
     async loginAs(userType: string) {
@@ -33,8 +34,8 @@ export class LoginPage extends BasePage {
         return await this.swaglabsLogo.isVisible();
     }
 
-   getErrorMessage() {
-    return this.errorMessage;
+  async getErrorMessage(): Promise<string | null> {
+    return await this.errorMessage.textContent();
 }
 
 }

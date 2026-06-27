@@ -1,144 +1,323 @@
-<testsuites id="" name="" tests="17" failures="0" skipped="1" errors="0" time="86.867023">
-<testsuite name="herokuapp\downloadFile.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="1" failures="0" skipped="0" time="22.186" errors="0">
-<testcase name="Handle downloadFiles › should download a file" classname="herokuapp\downloadFile.spec.ts" time="22.186">
+<testsuites id="" name="" tests="24" failures="2" skipped="1" errors="0" time="426.929909">
+<testsuite name="saucedemo\cartpage.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="4" failures="1" skipped="0" time="419.541" errors="0">
+<testcase name="Cart page tests › Navigate to cart page" classname="saucedemo\cartpage.spec.ts" time="92.322">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-downloadFile-Han-690b8-iles-should-download-a-file-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › click on continue shopping button and verify navigation to product page" classname="saucedemo\cartpage.spec.ts" time="96.706">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › remove product from cart and verify cart count" classname="saucedemo\cartpage.spec.ts" time="116.33">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Cart page tests › click on checkout button and verify navigation to checkout page" classname="saucedemo\cartpage.spec.ts" time="114.183">
+<failure message="cartpage.spec.ts:38:9 click on checkout button and verify navigation to checkout page" type="FAILURE">
+<![CDATA[  [chromium] › saucedemo\cartpage.spec.ts:38:9 › Cart page tests › click on checkout button and verify navigation to checkout page 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      3 | test.describe('Cart page tests', () => {
+      4 |
+    > 5 |     test.beforeEach(async ({ loginPage,productPage }) => {
+        |          ^
+      6 |         await loginPage.navigateTo();
+      7 |         await loginPage.loginAs('STANDARD_USER');
+      8 |          // ensure we are on product page
+        at C:\Users\Public\PlaywrightE2EFramework-Mar292026\tests\saucedemo\cartpage.spec.ts:5:10
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    Error: browserContext.close: Target page, context or browser has been closed
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\dragAndDrop.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="41.263" errors="0">
-<testcase name="drag and drop scenario › should download a file" classname="herokuapp\dragAndDrop.spec.ts" time="20.168">
+<testsuite name="saucedemo\checkout-csv-data-driven.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="3" failures="1" skipped="0" time="172.448" errors="0">
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow with data set 1-JohnDoe 60543" classname="saucedemo\checkout-csv-data-driven.spec.ts" time="114.236">
+<failure message="checkout-csv-data-driven.spec.ts:32:14 verify order completion flow with data set 1-JohnDoe 60543" type="FAILURE">
+<![CDATA[  [chromium] › saucedemo\checkout-csv-data-driven.spec.ts:32:14 › checkout flow test - reading CSV file single data › verify order completion flow with data set 1-JohnDoe 60543 
+
+    Test timeout of 30000ms exceeded while running "beforeEach" hook.
+
+      15 |
+      16 | test.describe('checkout flow test - reading CSV file single data', () => {
+    > 17 |     test.beforeEach(async ({ loginPage,productPage,cartPage,checkoutPage}) => {     
+         |          ^
+      18 |         await loginPage.navigateTo();
+      19 |         await loginPage.loginAs('STANDARD_USER');
+      20 |          // ensure we are on product page
+        at C:\Users\Public\PlaywrightE2EFramework-Mar292026\tests\saucedemo\checkout-csv-data-driven.spec.ts:17:10
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    Error: browserContext.close: Target page, context or browser has been closed
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Tearing down "context" exceeded the test timeout of 30000ms.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-dragAndDrop-drag-8e8a1-ario-should-download-a-file-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\error-context.md]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="drag and drop scenario › should drag and drop using mouse events" classname="herokuapp\dragAndDrop.spec.ts" time="21.095">
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow with data set 2-rameshch 560049" classname="saucedemo\checkout-csv-data-driven.spec.ts" time="32.613">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-dragAndDrop-drag-76531-and-drop-using-mouse-events-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-f42c4--data-set-2-rameshch-560049-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow with data set 3-sekharts 560045" classname="saucedemo\checkout-csv-data-driven.spec.ts" time="25.599">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-csv-dat-0f971--data-set-3-sekharts-560045-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\example.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="56.008" errors="0">
-<testcase name="has title" classname="herokuapp\example.spec.ts" time="28.571">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-example-has-title-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="get started link" classname="herokuapp\example.spec.ts" time="27.437">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-example-get-started-link-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-</testsuite>
-<testsuite name="herokuapp\fileUpload.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="1" time="19.037" errors="0">
-<testcase name="Handle fileupload › should upload a single file" classname="herokuapp\fileUpload.spec.ts" time="19.037">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-fileUpload-Handl-1d3da-should-upload-a-single-file-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle fileupload › should upload multiple files" classname="herokuapp\fileUpload.spec.ts" time="0">
+<testsuite name="saucedemo\checkout-csv-data.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="1" failures="0" skipped="1" time="0" errors="0">
+<testcase name="checkout flow test - reading CSV file single data › verify order completion flow" classname="saucedemo\checkout-csv-data.spec.ts" time="0">
 <properties>
-<property name="fixme" value="">
+<property name="skip" value="">
 </property>
 </properties>
 <skipped>
 </skipped>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\handleAlerts.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="5" failures="0" skipped="0" time="56.486" errors="0">
-<testcase name="Handle Alerts › should handle simple alert" classname="herokuapp\handleAlerts.spec.ts" time="9.733">
+<testsuite name="saucedemo\checkout-datadriven.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="3" failures="0" skipped="0" time="115.594" errors="0">
+<testcase name="checkout page tests › verify order completion flow with data set 1-JohnDoe 12345" classname="saucedemo\checkout-datadriven.spec.ts" time="72.478">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-66a46--should-handle-simple-alert-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Handle Alerts › should handle confirm alert" classname="herokuapp\handleAlerts.spec.ts" time="11.902">
+<testcase name="checkout page tests › verify order completion flow with data set 2-JaneSmith 54321" classname="saucedemo\checkout-datadriven.spec.ts" time="22.709">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-c1a07-should-handle-confirm-alert-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-a2e5d--data-set-2-JaneSmith-54321-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Handle Alerts › should handle confirm alert with cancel" classname="herokuapp\handleAlerts.spec.ts" time="13.645">
+<testcase name="checkout page tests › verify order completion flow with data set 3-AliceJohnson 67890" classname="saucedemo\checkout-datadriven.spec.ts" time="20.407">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-96dd5-e-confirm-alert-with-cancel-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle prompt alert" classname="herokuapp\handleAlerts.spec.ts" time="11.554">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-06a0f--should-handle-prompt-alert-chromium\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Handle Alerts › should handle prompt alert with cancel" classname="herokuapp\handleAlerts.spec.ts" time="9.652">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleAlerts-Han-c257f-le-prompt-alert-with-cancel-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-datadri-125a7-ta-set-3-AliceJohnson-67890-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\handleMultipleWindows.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="1" failures="0" skipped="0" time="25.719" errors="0">
-<testcase name="Handle Multiple Windows › should handle multiple windows" classname="herokuapp\handleMultipleWindows.spec.ts" time="25.719">
+<testsuite name="saucedemo\checkout.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="3" failures="0" skipped="0" time="124.261" errors="0">
+<testcase name="checkout page tests › verify order completion flow" classname="saucedemo\checkout.spec.ts" time="60.864">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handleMultipleWi-895aa-uld-handle-multiple-windows-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium\trace.zip]]
+
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout page tests › verify cancel button functionality on checkout page" classname="saucedemo\checkout.spec.ts" time="38.919">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-b73d6-ctionality-on-checkout-page-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="checkout page tests › Verify cancel button in checkout overview page" classname="saucedemo\checkout.spec.ts" time="24.478">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-checkout-checkou-284a4-n-in-checkout-overview-page-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\handlesFrames.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="46.697" errors="0">
-<testcase name="handle frams › handle iframes" classname="herokuapp\handlesFrames.spec.ts" time="27.076">
+<testsuite name="saucedemo\login.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="3" failures="0" skipped="0" time="65.253" errors="0">
+<testcase name="Login Tests › should login with valid credentials" classname="saucedemo\login.spec.ts" time="33.124">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\error-context.md]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium\trace.zip]]
-
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-iframes-chromium-retry1\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-login-Login-Test-1503d-ogin-with-valid-credentials-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="handle frams › handle normal frames" classname="herokuapp\handlesFrames.spec.ts" time="19.621">
+<testcase name="Login Tests › should show error with locked out credentials" classname="saucedemo\login.spec.ts" time="17.805">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-handlesFrames-handle-frams-handle-normal-frames-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-login-Login-Test-ef31e-with-locked-out-credentials-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Login Tests › should show error with invalid credentials" classname="saucedemo\login.spec.ts" time="14.324">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-login-Login-Test-63b13-or-with-invalid-credentials-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
 </testsuite>
-<testsuite name="herokuapp\keyboardActions.spec.ts" timestamp="2026-05-24T11:12:17.116Z" hostname="chromium" tests="2" failures="0" skipped="0" time="26.943" errors="0">
-<testcase name="Key board action scenario › keyboard actions" classname="herokuapp\keyboardActions.spec.ts" time="10.58">
+<testsuite name="saucedemo\products.spec.ts" timestamp="2026-06-20T14:53:48.100Z" hostname="chromium" tests="7" failures="0" skipped="0" time="215.753" errors="0">
+<testcase name="product page tests › should display products and verfy product list" classname="saucedemo\products.spec.ts" time="17.778">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-keyboardActions--943a4-n-scenario-keyboard-actions-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-products-product-d052b-ucts-and-verfy-product-list-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Key board action scenario › should combination of keys" classname="herokuapp\keyboardActions.spec.ts" time="16.363">
+<testcase name="product page tests › Add products to cart and verify cart count" classname="saucedemo\products.spec.ts" time="56.238">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|test-results\herokuapp-keyboardActions--109a9--should-combination-of-keys-chromium\trace.zip]]
+[[ATTACHMENT|test-results\saucedemo-products-product-a543e--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add product by name and verify cart count" classname="saucedemo\products.spec.ts" time="43.714">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-8ea4a--name-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Remove product by name and verify cart count" classname="saucedemo\products.spec.ts" time="26.834">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-26f77--name-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Add all products to cart and verify cart count" classname="saucedemo\products.spec.ts" time="34.303">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-94c32--cart-and-verify-cart-count-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › sort products by price low to high and verify sorting" classname="saucedemo\products.spec.ts" time="21.034">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-37f6b--to-high-and-verify-sorting-chromium\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="product page tests › Navigate to cart page" classname="saucedemo\products.spec.ts" time="15.852">
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results\saucedemo-products-product-page-tests-Navigate-to-cart-page-chromium\trace.zip]]
 ]]>
 </system-out>
 </testcase>
