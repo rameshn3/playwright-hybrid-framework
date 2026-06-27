@@ -11,7 +11,7 @@ export function loadEnv(envName: string) {
   const found = candidates.find(file => fs.existsSync(file));
 
   if (!found) {
-    throw new Error(`❌ No .env file found for environment: ${envName}`);
+    throw new Error(` No .env file found for environment: ${envName}`);
   }
 
   dotenv.config({ path: found });

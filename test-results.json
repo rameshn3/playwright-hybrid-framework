@@ -188,24 +188,80 @@
                     {
                       "workerIndex": 0,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 35361,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 60158,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                          "column": 10,
+                          "line": 5
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                            "column": 10,
+                            "line": 5
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:55:46.219Z",
+                      "startTime": "2026-06-20T14:54:07.636Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\\error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium\\trace.zip"
                         }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                        "column": 10,
+                        "line": 5
+                      }
+                    },
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 32164,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:56:31.521Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-page-tests-Navigate-to-cart-page-chromium-retry1\\trace.zip"
+                        }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "805ecc948cac3bd9e3e4-a885d25e451ae3731afb",
@@ -228,24 +284,83 @@
                     {
                       "workerIndex": 1,
                       "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 35995,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 60106,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                          "column": 10,
+                          "line": 5
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                            "column": 10,
+                            "line": 5
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        },
+                        {
+                          "message": "Error: apiRequestContext._wrapApiCall: Test ended."
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:55:43.456Z",
+                      "startTime": "2026-06-20T14:54:08.445Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\\error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium\\trace.zip"
                         }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                        "column": 10,
+                        "line": 5
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 36600,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:55:51.097Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-3d01d--navigation-to-product-page-chromium-retry1\\trace.zip"
+                        }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "805ecc948cac3bd9e3e4-d9558a036f4253ac9f7c",
@@ -268,24 +383,83 @@
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 36581,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 60472,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                          "column": 10,
+                          "line": 5
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                            "column": 10,
+                            "line": 5
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        },
+                        {
+                          "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:55:43.496Z",
+                      "startTime": "2026-06-20T14:54:09.873Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\\error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium\\trace.zip"
                         }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                        "column": 10,
+                        "line": 5
+                      }
+                    },
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 55858,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:55:55.206Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-9248a--cart-and-verify-cart-count-chromium-retry1\\trace.zip"
+                        }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "805ecc948cac3bd9e3e4-c46e48441712f73adb09",
@@ -295,7 +469,7 @@
             },
             {
               "title": "click on checkout button and verify navigation to checkout page",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -308,24 +482,96 @@
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 35529,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 60593,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                          "column": 10,
+                          "line": 5
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                            "column": 10,
+                            "line": 5
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 3 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'Cart page tests'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 4 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 5 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage }) \u001b[33m=>\u001b[39m {\n \u001b[90m   |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 6 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 7 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 8 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts:5:10\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        },
+                        {
+                          "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:55:43.457Z",
+                      "startTime": "2026-06-20T14:54:07.500Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\\error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium\\trace.zip"
                         }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\cartpage.spec.ts",
+                        "column": 10,
+                        "line": 5
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 53590,
+                      "error": {
+                        "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+                        "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:55:55.418Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-cartpage-Cart-pa-40696-navigation-to-checkout-page-chromium-retry1\\trace.zip"
+                        }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "805ecc948cac3bd9e3e4-b3eab8b8310d32724c16",
@@ -352,7 +598,7 @@
           "specs": [
             {
               "title": "verify order completion flow with data set 1-JohnDoe 60543",
-              "ok": true,
+              "ok": false,
               "tags": [],
               "tests": [
                 {
@@ -365,24 +611,96 @@
                     {
                       "workerIndex": 4,
                       "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 36971,
-                      "errors": [],
+                      "status": "timedOut",
+                      "duration": 60161,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data-driven.spec.ts:17:10",
+                        "location": {
+                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data-driven.spec.ts",
+                          "column": 10,
+                          "line": 17
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'checkout flow test - reading CSV file single data'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage\u001b[33m,\u001b[39mcartPage\u001b[33m,\u001b[39mcheckoutPage}) \u001b[33m=>\u001b[39m {     \n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data-driven.spec.ts",
+                            "column": 10,
+                            "line": 17
+                          },
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n\n\u001b[0m \u001b[90m 15 |\u001b[39m\n \u001b[90m 16 |\u001b[39m test\u001b[33m.\u001b[39mdescribe(\u001b[32m'checkout flow test - reading CSV file single data'\u001b[39m\u001b[33m,\u001b[39m () \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 17 |\u001b[39m     test\u001b[33m.\u001b[39mbeforeEach(\u001b[36masync\u001b[39m ({ loginPage\u001b[33m,\u001b[39mproductPage\u001b[33m,\u001b[39mcartPage\u001b[33m,\u001b[39mcheckoutPage}) \u001b[33m=>\u001b[39m {     \n \u001b[90m    |\u001b[39m          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 18 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mnavigateTo()\u001b[33m;\u001b[39m\n \u001b[90m 19 |\u001b[39m         \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mloginAs(\u001b[32m'STANDARD_USER'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 20 |\u001b[39m          \u001b[90m// ensure we are on product page\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data-driven.spec.ts:17:10\u001b[22m"
+                        },
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        },
+                        {
+                          "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:55:44.925Z",
+                      "startTime": "2026-06-20T14:54:10.076Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\\error-context.md"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium\\trace.zip"
                         }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data-driven.spec.ts",
+                        "column": 10,
+                        "line": 17
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 54075,
+                      "error": {
+                        "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+                        "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:55:54.092Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-a1fa6-th-data-set-1-JohnDoe-60543-chromium-retry1\\trace.zip"
+                        }
                       ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "unexpected"
                 }
               ],
               "id": "8d6d3e3d322163f1e2ba-2e465a0604106c1f7c77",
@@ -403,15 +721,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 26857,
+                      "duration": 32613,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:27.474Z",
+                      "startTime": "2026-06-20T14:56:34.896Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -443,15 +761,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 24438,
+                      "duration": 25599,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:28.214Z",
+                      "startTime": "2026-06-20T14:56:57.569Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -485,138 +803,53 @@
           "title": "checkout flow test - reading CSV file single data",
           "file": "saucedemo/checkout-csv-data.spec.ts",
           "line": 15,
-          "column": 6,
+          "column": 15,
           "specs": [
             {
               "title": "verify order completion flow",
-              "ok": false,
+              "ok": true,
               "tags": [],
               "tests": [
                 {
                   "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
+                  "annotations": [
+                    {
+                      "type": "skip",
+                      "location": {
+                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts",
+                        "line": 15,
+                        "column": 15
+                      }
+                    }
+                  ],
+                  "expectedStatus": "skipped",
                   "projectId": "chromium",
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 19124,
-                      "error": {
-                        "message": "Error: locator.fill: value: expected string, got undefined",
-                        "stack": "Error: locator.fill: value: expected string, got undefined\n    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28",
-                        "location": {
-                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
-                          "column": 35,
-                          "line": 33
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
-                            "column": 35,
-                            "line": 33
-                          },
-                          "message": "Error: locator.fill: value: expected string, got undefined\n\n\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m\n\u001b[2m    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\u001b[22m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28\u001b[22m"
-                        }
-                      ],
+                      "workerIndex": -1,
+                      "parallelIndex": -1,
+                      "status": "skipped",
+                      "duration": 0,
+                      "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:28.383Z",
-                      "annotations": [],
-                      "attachments": [
+                      "startTime": "2026-06-20T14:57:11.074Z",
+                      "annotations": [
                         {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
-                        "column": 35,
-                        "line": 33
-                      }
-                    },
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 26351,
-                      "error": {
-                        "message": "Error: locator.fill: value: expected string, got undefined",
-                        "stack": "Error: locator.fill: value: expected string, got undefined\n    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\n    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28",
-                        "location": {
-                          "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
-                          "column": 35,
-                          "line": 33
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m"
-                      },
-                      "errors": [
-                        {
+                          "type": "skip",
                           "location": {
-                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
-                            "column": 35,
-                            "line": 33
-                          },
-                          "message": "Error: locator.fill: value: expected string, got undefined\n\n\u001b[90m   at \u001b[39m..\\pages\\checkoutPage.ts:33\n\n\u001b[0m \u001b[90m 31 |\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[36masync\u001b[39m fillCheckoutInformation(firstName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m lastName\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m postalCode\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 33 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mfirstNameInput\u001b[33m.\u001b[39mfill(firstName)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 34 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mlastNameInput\u001b[33m.\u001b[39mfill(lastName)\u001b[33m;\u001b[39m\n \u001b[90m 35 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpostalCodeInput\u001b[33m.\u001b[39mfill(postalCode)\u001b[33m;\u001b[39m\n \u001b[90m 36 |\u001b[39m     }\u001b[0m\n\u001b[2m    at CheckoutPage.fillCheckoutInformation (C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts:33:35)\u001b[22m\n\u001b[2m    at C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts:31:28\u001b[22m"
+                            "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\tests\\saucedemo\\checkout-csv-data.spec.ts",
+                            "line": 15,
+                            "column": 15
+                          }
                         }
                       ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 1,
-                      "startTime": "2026-05-24T13:57:33.008Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\error-context.md"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-csv-dat-5a79d-erify-order-completion-flow-chromium-retry1\\trace.zip"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\pages\\checkoutPage.ts",
-                        "column": 35,
-                        "line": 33
-                      }
+                      "attachments": []
                     }
                   ],
-                  "status": "unexpected"
+                  "status": "skipped"
                 }
               ],
               "id": "ffbbbe48fa8d5500f053-4612b00818a8dbd8c1ce",
@@ -654,26 +887,58 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 23336,
-                      "errors": [],
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 40623,
+                      "error": {
+                        "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+                        "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:32.171Z",
+                      "startTime": "2026-06-20T14:57:28.016Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium\\test-failed-1.png"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium\\trace.zip"
                         }
                       ]
+                    },
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 31855,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:59:21.810Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-datadri-2fcf6-th-data-set-1-JohnDoe-12345-chromium-retry1\\trace.zip"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "c1c9b5106d2abd0abae2-7d0fbe0eda1a5c15ec94",
@@ -694,15 +959,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 18374,
+                      "duration": 22709,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:40.399Z",
+                      "startTime": "2026-06-20T14:57:11.605Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -734,15 +999,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 21559,
+                      "duration": 20407,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:57.264Z",
+                      "startTime": "2026-06-20T14:57:12.027Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -791,26 +1056,58 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 25586,
-                      "errors": [],
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 36643,
+                      "error": {
+                        "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m",
+                        "stack": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTearing down \"context\" exceeded the test timeout of 30000ms.\u001b[39m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:56:58.263Z",
+                      "startTime": "2026-06-20T14:57:26.152Z",
                       "annotations": [],
                       "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium\\test-failed-1.png"
+                        },
                         {
                           "name": "trace",
                           "contentType": "application/zip",
                           "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium\\trace.zip"
                         }
                       ]
+                    },
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 24221,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-06-20T14:58:46.388Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Public\\PlaywrightE2EFramework-Mar292026\\test-results\\saucedemo-checkout-checkou-bee04-erify-order-completion-flow-chromium-retry1\\trace.zip"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "ed12acc0108d051d6837-c84a5ba4fba896940787",
@@ -831,15 +1128,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 17436,
+                      "duration": 38919,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:03.531Z",
+                      "startTime": "2026-06-20T14:57:39.312Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -871,15 +1168,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 25730,
+                      "duration": 24478,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:08.256Z",
+                      "startTime": "2026-06-20T14:58:07.526Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -931,15 +1228,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 9,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 20399,
+                      "duration": 33124,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:22.996Z",
+                      "startTime": "2026-06-20T14:57:43.313Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -974,15 +1271,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12330,
+                      "duration": 17805,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:24.703Z",
+                      "startTime": "2026-06-20T14:58:22.217Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1017,15 +1314,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 17070,
+                      "duration": 14324,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:32.660Z",
+                      "startTime": "2026-06-20T14:58:24.309Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1074,15 +1371,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 18685,
+                      "duration": 17778,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:41.646Z",
+                      "startTime": "2026-06-20T14:58:39.934Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1114,15 +1411,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 9,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 21196,
+                      "duration": 56238,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:42.078Z",
+                      "startTime": "2026-06-20T14:58:41.455Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1154,15 +1451,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 19167,
+                      "duration": 43714,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:49.774Z",
+                      "startTime": "2026-06-20T14:58:48.935Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1194,15 +1491,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 23167,
+                      "duration": 26834,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:57:51.360Z",
+                      "startTime": "2026-06-20T14:58:59.853Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1234,15 +1531,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 12,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 19665,
+                      "duration": 34303,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:58:02.513Z",
+                      "startTime": "2026-06-20T14:59:21.874Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1274,15 +1571,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 11622,
+                      "duration": 21034,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:58:08.924Z",
+                      "startTime": "2026-06-20T14:59:34.357Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1314,15 +1611,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 11,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 8200,
+                      "duration": 15852,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2026-05-24T13:58:12.554Z",
+                      "startTime": "2026-06-20T14:59:40.826Z",
                       "annotations": [],
                       "attachments": [
                         {
@@ -1348,11 +1645,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-05-24T13:55:29.736Z",
-    "duration": 179919.735,
-    "expected": 23,
-    "skipped": 0,
-    "unexpected": 1,
-    "flaky": 0
+    "startTime": "2026-06-20T14:53:46.156Z",
+    "duration": 426929.909,
+    "expected": 16,
+    "skipped": 1,
+    "unexpected": 2,
+    "flaky": 5
   }
 }
