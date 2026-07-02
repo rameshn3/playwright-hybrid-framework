@@ -1,4 +1,4 @@
-import {test,expect} from '../../fixtures/fixture';
+import {test,expect} from '../../fixtures/appFixture';
 
 test.describe('Login Tests', () => {
 
@@ -18,7 +18,8 @@ test.describe('Login Tests', () => {
   }, async ({ loginPage }) => {
         await loginPage.navigateTo();
        await loginPage.loginAs('LOCKED_OUT_USER');
-      await expect(loginPage.getErrorMessage()).toContainText('locked out');
+       const errorMessage = await loginPage.getErrorMessage();
+      await expect(errorMessage).toContainText('locked out');
     }); 
 
     test('should show error with invalid credentials', {
@@ -26,6 +27,7 @@ test.describe('Login Tests', () => {
   },async ({ loginPage }) => {
          await loginPage.navigateTo();
         await loginPage.loginAs('INVALID_USER');
-        await expect(loginPage.getErrorMessage()).toContainText('Username and password do not match');
+        const errorMessage = await loginPage.getErrorMessage();
+      await expect(errorMessage).toContainText('Username and password do not match');
     });
 });  

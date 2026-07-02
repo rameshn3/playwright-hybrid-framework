@@ -1,4 +1,4 @@
-import {Locator } from '@playwright/test';
+import {Locator,Page } from '@playwright/test';
 import { BasePage } from './basePage';
 
 export class CheckoutPage extends BasePage {
@@ -11,8 +11,9 @@ export class CheckoutPage extends BasePage {
     private finishButton: Locator;
     private successMessage: Locator;
     private backToProductsButton: Locator;
+    private checkoutInformationEmptyError: Locator;
 
-    constructor(page) {
+    constructor(page: Page) {
         super(page);
         this.checkoutTitle = page.locator('.title');
         this.firstNameInput = page.locator('#first-name');
@@ -23,6 +24,7 @@ export class CheckoutPage extends BasePage {
         this.finishButton = page.getByText('Finish');
         this.successMessage = page.locator('.complete-header');
         this.backToProductsButton = page.locator('#back-to-products');
+        this.checkoutInformationEmptyError = page.locator("h3[data-test='error']");
     }
 
     async isCheckoutPageDisplayed(): Promise<boolean> {
@@ -33,6 +35,10 @@ export class CheckoutPage extends BasePage {
         await this.firstNameInput.fill(firstName);
         await this.lastNameInput.fill(lastName);
         await this.postalCodeInput.fill(postalCode);
+    }
+
+    async getCheckoutInformationEmptyError(): Promise<string> {
+        return await this.checkoutInformationEmptyError.textContent() || '';
     }
 
     async clickContinueButton() {

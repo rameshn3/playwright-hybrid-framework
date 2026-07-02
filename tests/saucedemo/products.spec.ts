@@ -1,4 +1,4 @@
-import {test,expect} from '../../fixtures/fixture';
+import {test,expect} from '../../fixtures/appFixture';
 
 test.describe('product page tests', () => {
 
@@ -10,15 +10,23 @@ test.describe('product page tests', () => {
     });
 
     test('should display products and verfy product list', async ({ productPage }) => {
-        await expect(productPage.isProductPageLoaded()).toBeTruthy();
-          const count = await productPage.getPoductCount();
+        const count = await productPage.getProductCount();
         await expect(count).toBeGreaterThan(0);
          await expect(count).toBe(6);
     });
 
     test('Add products to cart and verify cart count', async ({ productPage }) => {
-        await productPage.addProductToCartByIndex(0);
-        await productPage.addProductToCartByIndex(1);
+       // await productPage.addProductToCartByIndex(0);
+       // await productPage.addProductToCartByIndex(1);
+        const count = await productPage.getProductCount();
+       for(let i:number=0;i<count;i++){
+        if(i<2){
+          await productPage.addProductToCartByIndex(i);  
+          
+        }
+        
+    }
+
         const cartCount = await productPage.getCartItemCount();
         await expect(cartCount).toBe(2);
     });
@@ -31,9 +39,11 @@ test.describe('product page tests', () => {
 
     test('Remove product by name and verify cart count', async ({ productPage }) => {
          await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
+         const cartCount = await productPage.getCartItemCount();
+        await expect(cartCount).toBe(1);
         await productPage.removeProductFromCartByName('Sauce Labs Bolt T-Shirt');
-        const cartCount = await productPage.getCartItemCount();
-        await expect(cartCount).toBe(0);
+        const cartCountAftr = await productPage.getCartItemCount();
+        await expect(cartCountAftr).toBe(0);
     });
 
     test('Add all products to cart and verify cart count', async ({ productPage }) => {

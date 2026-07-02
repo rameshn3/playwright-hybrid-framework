@@ -1,4 +1,4 @@
-import {Locator } from '@playwright/test';
+import {Locator,Page } from '@playwright/test';
 import { BasePage } from './basePage';
 
 export class CartPage extends BasePage {
@@ -10,7 +10,7 @@ export class CartPage extends BasePage {
     private quantityInput: Locator;
     private itemPrice: Locator;
 
-    constructor(page) {
+    constructor(page: Page) {
         super(page);
         this.cartTitle = page.locator('.title'); // .classvalue or [attributenam='attributevalue']
         this.cartItems = page.locator('.cart_item');
@@ -33,6 +33,11 @@ async isCartPageLoaded(): Promise<boolean> {
     return txt?.trim() === 'Your Cart';
 }
 
+async getCartTitleElement(): Promise<Locator> { 
+    return this.cartTitle;
+}
+
+
 //click on continue shopping button
 async clickContinueShoppingButton(){
     await this.continueShoppingButton.click();  
@@ -53,14 +58,20 @@ async removeProductFromCart(productName:string){
 //get product quantity in cart
 async getProductQuantity(productName:string):Promise<number>{
     const product = this.page.locator('.cart_item').filter({ hasText: productName });
-    const quantityText = await this.quantityInput.textContent();
-    return parseInt((quantityText || '0').trim(), 10);
+    const quantityText = await product.locator('.cart_quantity').textContent();
+    return parseInt((quantityText || '0').trim());
 }
 
 //get product price in cart
 async getProductPrice(productName:string):Promise<number>{
     const product = this.page.locator('.cart_item').filter({ hasText: productName });
-    const priceText = await this.itemPrice.textContent();
+    const priceText = await product.locator('.inventory_item_price').textContent();
     return parseFloat((priceText || '0').replace('$', '').trim());
 }
+
+//get cart table count
+async getCartItemCount(): Promise<number> {
+    return await this.cartItems.count();
+}
+
 }
