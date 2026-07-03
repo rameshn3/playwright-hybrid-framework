@@ -17,13 +17,13 @@ test.describe('checkout page tests', () => {
         await loginPage.navigateTo();
         await loginPage.loginAs('STANDARD_USER');
          // ensure we are on product page
-    await expect(productPage.isProductPageLoaded).toBeTruthy();
-    await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
+        await expect(productPage.isProductPageLoaded).toBeTruthy();
+        await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
         const cartCount = await productPage.getCartItemCount();
         await expect(cartCount).toBeGreaterThan(0);
-          await productPage.goToCart();
-          await expect(await cartPage.isCartPageLoaded()).toBeTruthy();
-            await cartPage.clickCheckoutButton();
+        await productPage.goToCart();
+        await expect(await cartPage.isCartPageLoaded()).toBeTruthy();
+        await cartPage.clickCheckoutButton();
         await expect(checkoutPage.isCheckoutPageDisplayed()).toBeTruthy();
     });
 
