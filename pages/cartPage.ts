@@ -1,4 +1,4 @@
-import {Locator } from '@playwright/test';
+import {Locator,Page } from '@playwright/test';
 import { BasePage } from './basePage';
 
 export class CartPage extends BasePage {
@@ -10,7 +10,7 @@ export class CartPage extends BasePage {
     private quantityInput: Locator;
     private itemPrice: Locator;
 
-    constructor(page) {
+    constructor(page:Page) {
         super(page);
         this.cartTitle = page.locator('.title'); // .classvalue or [attributenam='attributevalue']
         this.cartItems = page.locator('.cart_item');
