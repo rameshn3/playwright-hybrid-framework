@@ -1,4 +1,4 @@
-import {test,expect} from '../../fixtures/fixture';
+import {test,expect} from '../../fixtures/appFixture';
 import {readTestData} from '../../utils/dataReader';
 
 //defineth type

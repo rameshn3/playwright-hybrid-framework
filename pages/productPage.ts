@@ -75,8 +75,12 @@ export class ProductPage extends BasePage {
 
     //get product count in cart
     async getCartItemCount(): Promise<number> {
-        const countText = await this.shoppingCartIcon.textContent();
-        return countText ? parseInt(countText.trim()) : 0;
+        if(!(await this.shoppingCartIcon.isVisible())){
+             return 0;
+        }
+      
+         const countText = await this.shoppingCartIcon.textContent();
+            return countText ? parseInt(countText.trim()) : 0;
     }   
 
     //logout from application
