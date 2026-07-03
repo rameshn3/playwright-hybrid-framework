@@ -33,6 +33,9 @@ async isCartPageLoaded(): Promise<boolean> {
     return txt?.trim() === 'Your Cart';
 }
 
+async getCartTitleElement(): Promise<Locator> { 
+    return this.cartTitle;
+}
 //click on continue shopping button
 async clickContinueShoppingButton(){
     await this.continueShoppingButton.click();  
