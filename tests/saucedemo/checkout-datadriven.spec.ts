@@ -21,6 +21,7 @@ test.describe('checkout page tests', () => {
     await expect(productPage.isProductPageLoaded).toBeTruthy();
     await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
         const cartCount = await productPage.getCartItemCount();
+        console.log('cartcount#::',cartCount);
         await expect(cartCount).toBeGreaterThan(0);
           await productPage.goToCart();
           await expect(await cartPage.isCartPageLoaded()).toBeTruthy();
