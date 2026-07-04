@@ -1,47 +1,68 @@
-import {test,expect} from '../../fixtures/appFixture';
-import {readCSVData} from '../../utils/csvReader';
+import { test, expect } from '../../fixtures/appFixture';
+import { readCSVData } from '../../utils/csvReader';
 
-//defineth type
+// Define the type
 type CheckoutData = {
-    forEach(arg0: (data: any, index: any) => void): unknown;
     firstName: string;
     lastName: string;
     zipCode: string;
 };
 
-//read data using genric function
-const checkoutData: CheckoutData = readCSVData<CheckoutData>('./testdata/datadrivenCsvData.csv');
+// Read all records from CSV
+const checkoutData: CheckoutData[] =
+    readCSVData<CheckoutData>('./testdata/datadrivenCsvData.csv');
 
+test.describe('Checkout flow test - Data Driven CSV', () => {
 
-test.describe('checkout flow test - reading CSV file single data', () => {
-    test.beforeEach(async ({ loginPage,productPage,cartPage,checkoutPage}) => {     
+    // Run all tests in this describe one after another
+    test.describe.configure({ mode: 'serial' });
+
+    test.beforeEach(async ({ loginPage, productPage, cartPage, checkoutPage }) => {
         await loginPage.navigateTo();
         await loginPage.loginAs('STANDARD_USER');
-         // ensure we are on product page
-    await expect(productPage.isProductPageLoaded).toBeTruthy();
-    await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
-        const cartCount = await productPage.getCartItemCount();
-        await expect(cartCount).toBeGreaterThan(0);
-          await productPage.goToCart();
-          await expect(await cartPage.isCartPageLoaded()).toBeTruthy();
-            await cartPage.clickCheckoutButton();
-        await expect(checkoutPage.isCheckoutPageDisplayed()).toBeTruthy();
+
+        await expect(await productPage.isProductPageLoaded()).toBeTruthy();
+
+        await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
+
+        expect(await productPage.getCartItemCount()).toBeGreaterThan(0);
+
+        await productPage.goToCart();
+
+        expect(await cartPage.isCartPageLoaded()).toBeTruthy();
+
+        await cartPage.clickCheckoutButton();
+
+        expect(await checkoutPage.isCheckoutPageDisplayed()).toBeTruthy();
     });
 
-    checkoutData.forEach((data,index) => {
-         test(`verify order completion flow with data set ${index + 1}-${data.firstName}${data.lastName} ${data.zipCode}`, async ({ checkoutPage }) => {
-             await checkoutPage.fillCheckoutInformation(data.firstName, data.lastName, data.zipCode);
+    checkoutData.forEach((data, index) => {
+
+        test(`Verify order completion flow - Dataset ${index + 1}`, async ({ checkoutPage }) => {
+
+            console.log(`Running Dataset ${index + 1}`, data);
+
+            await checkoutPage.fillCheckoutInformation(
+                data.firstName,
+                data.lastName,
+                data.zipCode
+            );
+
             await checkoutPage.clickContinueButton();
-        await expect(checkoutPage.isOverviewPageDisplayed()).toBeTruthy();
-        await checkoutPage.clickFinishButton();
-        await expect(checkoutPage.isSuccessMessageDisplayed()).toBeTruthy(); 
-        await checkoutPage.clickBackToProductsButton();
-             
-    });
-    });
-    
-     test.afterEach(async ({ productPage }) => {
-            await productPage.logout();
+
+            expect(await checkoutPage.isOverviewPageDisplayed()).toBeTruthy();
+
+            await checkoutPage.clickFinishButton();
+
+            expect(await checkoutPage.isSuccessMessageDisplayed()).toBeTruthy();
+
+            await checkoutPage.clickBackToProductsButton();
         });
+
+    });
+
+    test.afterEach(async ({ productPage }) => {
+        await productPage.logout();
+    });
 
 });

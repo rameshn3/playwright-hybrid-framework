@@ -9,10 +9,10 @@ type CheckoutData = {
 };
 
 //read data using genric function
-const checkoutData: CheckoutData = readCSVData<CheckoutData>('./testdata/checkoutData.csv');
+const checkoutData: CheckoutData[] = readCSVData<CheckoutData>('./testdata/checkoutData.csv');
 
 
-test.describe.skip('checkout flow test - reading CSV file single data', () => {
+test.describe('checkout flow test - reading CSV file single data', () => {
     test.beforeEach(async ({ loginPage,productPage,cartPage,checkoutPage}) => {     
         await loginPage.navigateTo();
         await loginPage.loginAs('STANDARD_USER');
@@ -28,7 +28,8 @@ test.describe.skip('checkout flow test - reading CSV file single data', () => {
     });
 
     test('verify order completion flow', async ({ checkoutPage }) => {
-        await checkoutPage.fillCheckoutInformation(checkoutData.firstName, checkoutData.lastName, checkoutData.zipCode);
+        console.log('checkoutData#::',checkoutData[0].firstName,checkoutData[0].lastName,checkoutData[0].zipCode);
+        await checkoutPage.fillCheckoutInformation(checkoutData[0].firstName, checkoutData[0].lastName, checkoutData[0].zipCode);
         await checkoutPage.clickContinueButton();
         await expect(checkoutPage.isOverviewPageDisplayed()).toBeTruthy();
         await checkoutPage.clickFinishButton();

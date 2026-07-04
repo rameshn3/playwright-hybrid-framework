@@ -9,8 +9,8 @@
     "test:all": "npm run test:ui && npm run test:api && npm run test:heroku",
     "test:headed": "npx playwright test --headed",
     "test:debug": "npx playwright test --debug",
-    "test:file:dev" : "cross-env ENV_ID=dev npx playwright test --project=chromium",
-    "test:file:qa" : "cross-env ENV_ID=qa npx playwright test --project=chromium",
+    "test:file:dev": "cross-env ENV_ID=dev npx playwright test --project=chromium",
+    "test:file:qa": "cross-env ENV_ID=qa npx playwright test --project=chromium",
     "allure:generate": "allure generate ./allure-results --clean -o ./allure-report",
     "allure:open": "allure open ./allure-report",
     "allure:serve": "allure serve ./allure-results"
@@ -31,6 +31,7 @@
     "ajv-formats": "^3.0.1",
     "allure-js-commons": "^3.9.0",
     "csv-parse": "^6.2.1",
+    "csv-parser": "^3.2.1",
     "dotenv": "^17.4.0"
   }
 }
