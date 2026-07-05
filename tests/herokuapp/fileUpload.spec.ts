@@ -13,7 +13,7 @@ test.describe('Handle fileupload', () => {
         expect(uploadedFileName).toBe(fileName);
     });
 
-    test.fixme('should upload multiple files', async ({ herokuAppPage }) => {
+    test('should upload multiple files', async ({ herokuAppPage }) => {
         const fileNames = ['checkoutData.csv', 'datadrivenCsvData.csv'];
         await herokuAppPage.uploadMultipleFiles(fileNames);
         const uploadedFileName = await herokuAppPage.getUploadedFileName();

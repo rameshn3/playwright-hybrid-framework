@@ -1,11 +1,11 @@
-import {Locator } from '@playwright/test';
+import {Locator,Page } from '@playwright/test';
 import { BasePage } from './basePage';
 import path from 'path';
 
 export class HerokuAppPage extends BasePage {  
     private javascriptAlertsLink: Locator;
    
-    constructor(page) {
+    constructor(page:Page) {
         super(page);
         this.javascriptAlertsLink = page.getByRole('link', { name: 'JavaScript Alerts' });
     }

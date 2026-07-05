@@ -11,6 +11,9 @@ test.describe('Handle downloadFiles', () => {
      const download = await herokuAppPage.downloadFile('some-file.txt');
 
   const path = await download.path();
+  //stoe the file in project directory in testdata folder
+  await download.saveAs('testdata/some-file.txt');
+  console.log('Downloaded file path:', path);
   expect(path).toBeTruthy(); // Verify that the download path is valid
     });
 

@@ -1,4 +1,5 @@
 import {test,expect} from '../../fixtures/appFixture';
+import{FileWriter} from '../../utils/fileWriter';
 
 test.describe('Cart page tests', () => {
 
@@ -9,6 +10,7 @@ test.describe('Cart page tests', () => {
         await expect(productPage.isProductPageLoaded).toBeTruthy();
         await productPage.addProductToCartByName('Sauce Labs Bolt T-Shirt');
         const cartCount = await productPage.getCartItemCount();
+        FileWriter.writeToFile('./testdata/cartCount.txt', cartCount.toString());
         await expect(cartCount).toBeGreaterThan(0);
         await productPage.goToCart();
         await expect(await cartPage.isCartPageLoaded()).toBeTruthy();
