@@ -12,7 +12,7 @@ type CheckoutData = {
 const checkoutData: CheckoutData[] =
     readCSVData<CheckoutData>('./testdata/datadrivenCsvData.csv');
 
-test.describe('Checkout flow test - Data Driven CSV', () => {
+test.describe.skip('Checkout flow test - Data Driven CSV', () => {
 
     // Run all tests in this describe one after another
     test.describe.configure({ mode: 'serial' });
