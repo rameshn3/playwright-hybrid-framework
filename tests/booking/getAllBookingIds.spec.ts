@@ -10,14 +10,25 @@ test.describe('Booking API - Get All Booking IDs', () => {
         expect(bookingIds[0]).toHaveProperty('bookingid');
     });
 
-    test('should get booking details by booking id', async ({ bookingApi }) => {
-        const bookingIds = await bookingApi.getBooking(1); // Assuming booking ID 1 exists
+   test('should get booking details by booking id', async ({ bookingApi }) => {
 
-        expect(bookingIds).toHaveProperty('firstname');
-        expect(bookingIds).toHaveProperty('lastname');
-        expect(bookingIds).toHaveProperty('totalprice');
-        expect(bookingIds).toHaveProperty('depositpaid');   
-        expect(bookingIds).toHaveProperty('bookingdates');
+    const response = await bookingApi.getBookingResponse(1, 200);
+
+    const booking = await response.json();
+
+    expect(booking).toHaveProperty('firstname');
+    expect(booking).toHaveProperty('lastname');
+    expect(booking).toHaveProperty('totalprice');
+    expect(booking).toHaveProperty('depositpaid');
+    expect(booking).toHaveProperty('bookingdates');
+});
+
+    test('should thow 404 statuscode for invalid booking id', async ({ bookingApi }) => {
+        const invalidBookingId = 999999; 
+        const response = await bookingApi.getBookingResponse(invalidBookingId, 404);
+     expect(await response.text()).toBe("Not Found");
+       
+        
     });
 
 })

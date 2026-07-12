@@ -21,18 +21,16 @@ export class BookingApi extends BaseApi {
         return await response.json() as BookingResponse;
     }
 
-    // Get Booking
-    async getBooking(
-        bookingId: number
-    ): Promise<BookingPayload> {
+async getBookingResponse(
+    bookingId: number,
+    expectedStatus: number = 200
+) {
 
-        const response = await this.get(
-            `/booking/${bookingId}`
-        );
-
-        return await response.json() as BookingPayload;
-    }
-
+    return await this.get(
+        `/booking/${bookingId}`,
+        expectedStatus
+    );
+}
     // Get All Bookings
     async getAllBookingIds() {
 

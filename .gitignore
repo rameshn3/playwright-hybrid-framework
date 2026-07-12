@@ -1,6 +1,7 @@
 
 # Playwright
 node_modules/
+test-results/*
 test-results.json
 test-results.xml
 /playwright-report/
